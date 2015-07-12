@@ -98,7 +98,6 @@ const int kTEAMAXPERSONS = 12;
     UIView *grayView = [[UIView alloc] initWithFrame:frame];
     grayView.backgroundColor = [UIColor lightGrayColor];
     [self.tableView addSubview:grayView];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -219,8 +218,6 @@ const int kTEAMAXPERSONS = 12;
             //slider changing values
             cell.slider.continuous = YES;
             
-            //self.trackingSlider = cell.slider;
-            //self.sliderLabel = cell.detailLabel;
             [cell.slider addTarget:self
                             action:@selector(sliderValueChanged:)
                   forControlEvents:UIControlEventValueChanged];
@@ -564,12 +561,6 @@ const int kTEAMAXPERSONS = 12;
 - (void)saveData {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.sliderAmountArray forKey:@"sliderAmountArray"];
-    //it's logicall to only save sliders data
-//    [defaults setObject:self.inputTextField.text forKey:@"inputTextFieldText"];
-//    [defaults setObject:[NSNumber numberWithFloat:self.grandTotalAmount] forKey:@"grandTotalAmount"];
-//    [defaults setObject:[NSNumber numberWithFloat:self.taxAmount] forKey:@"taxAmount"];
-//    [defaults setObject:[NSNumber numberWithFloat:self.tipAmount] forKey:@"tipAmount"];
-//    [defaults setObject:[NSNumber numberWithFloat:self.eachPayAmount] forKey:@"eachPayAmount"];
     [defaults synchronize];
 }
 

@@ -406,6 +406,7 @@ const int kTEAMAXPERSONS = 12;
         slider.textColor = [UIColor lightGrayColor];
         slider.popUpViewColor = [UIColor whiteColor];
         slider.autoAdjustTrackColor = NO;
+        slider.minimumTrackTintColor = [UIColor whiteColor];
 
     } else if (indexPath.row == TEASlidersSectionTipRateRow){
         [formatter setNumberStyle:NSNumberFormatterPercentStyle];
@@ -425,8 +426,6 @@ const int kTEAMAXPERSONS = 12;
         slider.textColor = [UIColor lightGrayColor];
         slider.popUpViewColor = [UIColor whiteColor];
         slider.popUpViewAnimatedColors = @[[UIColor redColor], [UIColor whiteColor], [UIColor greenColor]];
-        slider.autoAdjustTrackColor = NO; 
-        
         
     } else {
         [formatter setNumberStyle:NSNumberFormatterNoStyle];
@@ -446,6 +445,7 @@ const int kTEAMAXPERSONS = 12;
         slider.textColor = [UIColor lightGrayColor];
         slider.popUpViewColor = [UIColor whiteColor];
         slider.autoAdjustTrackColor = NO;
+        slider.minimumTrackTintColor = [UIColor whiteColor];
     }
 }
 

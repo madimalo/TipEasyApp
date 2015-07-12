@@ -1,0 +1,13 @@
+PODS:
+  - ASValueTrackingSlider (0.10.1)
+  - BSKeyboardControls (2.2)
+
+DEPENDENCIES:
+  - ASValueTrackingSlider
+  - BSKeyboardControls (~> 2.2)
+
+SPEC CHECKSUMS:
+  ASValueTrackingSlider: 00fe601d9b5b2efeac515c1673afbf452f8e78ba
+  BSKeyboardControls: b701935e789961102e3f20063bba7185800a2d3f
+
+COCOAPODS: 0.37.2

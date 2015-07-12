@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell autoresizesSubviews="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpandingCell" id="KGk-i7-Jjw" customClass="ExpandingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDR-r6-1PH">
+                        <rect key="frame" x="200" y="13" width="104" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="BVw-Ct-x5j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IE-1a-krR">
+                        <rect key="frame" x="16" y="13" width="184" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wu0-Kk-D90"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-mi-gen" customClass="ASValueTrackingSlider">
+                        <rect key="frame" x="16" y="73" width="288" height="31"/>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-AD-QwL">
+                        <rect key="frame" x="0.0" y="108" width="320" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hDq-jI-tDJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9IE-1a-krR" firstAttribute="firstBaseline" secondItem="NDR-r6-1PH" secondAttribute="firstBaseline" id="8a9-oM-Joj"/>
+                    <constraint firstItem="XdM-mi-gen" firstAttribute="top" secondItem="9IE-1a-krR" secondAttribute="bottom" constant="39" id="EFn-tu-hTW"/>
+                    <constraint firstAttribute="trailing" secondItem="XG6-AD-QwL" secondAttribute="trailing" id="Er6-yJ-Hil"/>
+                    <constraint firstItem="9IE-1a-krR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="J4M-w6-XEi"/>
+                    <constraint firstItem="9IE-1a-krR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Jhz-2k-yKc"/>
+                    <constraint firstItem="XG6-AD-QwL" firstAttribute="centerX" secondItem="XdM-mi-gen" secondAttribute="centerX" id="MtN-Nw-IH6"/>
+                    <constraint firstItem="NDR-r6-1PH" firstAttribute="baseline" secondItem="9IE-1a-krR" secondAttribute="baseline" id="Nrt-gw-qo3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NDR-r6-1PH" secondAttribute="trailing" constant="8" id="cKP-s7-biH"/>
+                    <constraint firstItem="XG6-AD-QwL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gJb-U1-j2E"/>
+                    <constraint firstItem="NDR-r6-1PH" firstAttribute="leading" secondItem="9IE-1a-krR" secondAttribute="trailing" id="mvN-vS-CmN"/>
+                    <constraint firstItem="XdM-mi-gen" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="sdg-9h-UtY"/>
+                    <constraint firstItem="XG6-AD-QwL" firstAttribute="top" secondItem="XdM-mi-gen" secondAttribute="bottom" constant="5" id="xjP-bY-2sj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="NDR-r6-1PH" id="KGP-81-sej"/>
+                <outlet property="hintLabel" destination="XG6-AD-QwL" id="MKd-Ih-5pa"/>
+                <outlet property="slider" destination="XdM-mi-gen" id="EiM-Fd-dK1"/>
+                <outlet property="titleLabel" destination="9IE-1a-krR" id="yta-xV-8sA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

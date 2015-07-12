@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292C27961B51037800C36DE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292C27951B51037800C36DE0 /* LaunchScreen.xib */; };
+		292C27981B51AB1F00C36DE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292C27971B51AB1F00C36DE0 /* Images.xcassets */; };
+		292C279A1B51E2EF00C36DE0 /* Icon_v4 in Resources */ = {isa = PBXBuildFile; fileRef = 292C27991B51E2EF00C36DE0 /* Icon_v4 */; };
+		29988FB11B4C721E0045EA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FB01B4C721E0045EA73 /* main.m */; };
+		29988FB41B4C721E0045EA73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FB31B4C721E0045EA73 /* AppDelegate.m */; };
+		29988FBA1B4C721E0045EA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29988FB81B4C721E0045EA73 /* Main.storyboard */; };
+		29988FCB1B4C721E0045EA73 /* TipEasyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FCA1B4C721E0045EA73 /* TipEasyAppTests.m */; };
+		29988FD61B4C76C40045EA73 /* TEATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FD51B4C76C40045EA73 /* TEATableViewController.m */; };
+		29988FDB1B4C780A0045EA73 /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FD91B4C780A0045EA73 /* ExpandingCell.m */; };
+		29988FDC1B4C780A0045EA73 /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FDA1B4C780A0045EA73 /* ExpandingCell.xib */; };
+		29988FE61B4CB1420045EA73 /* ResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FE41B4CB1420045EA73 /* ResultCell.m */; };
+		29988FE71B4CB1420045EA73 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FE51B4CB1420045EA73 /* ResultCell.xib */; };
+		29988FEB1B4CB22A0045EA73 /* InputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FE91B4CB22A0045EA73 /* InputCell.m */; };
+		29988FEC1B4CB22A0045EA73 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FEA1B4CB22A0045EA73 /* InputCell.xib */; };
+		29D455861B4DE8AA00D10163 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4557F1B4DE8AA00D10163 /* FAImageView.m */; };
+		29D455871B4DE8AA00D10163 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455811B4DE8AA00D10163 /* NSString+FontAwesome.m */; };
+		29D455881B4DE8AA00D10163 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455831B4DE8AA00D10163 /* UIFont+FontAwesome.m */; };
+		29D455891B4DE8AA00D10163 /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455851B4DE8AA00D10163 /* UIImage+FontAwesome.m */; };
+		29D4558B1B4DF05000D10163 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29D4557B1B4DE46900D10163 /* fontawesome-webfont.ttf */; };
+		29D4558E1B4E1B9F00D10163 /* CalcUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4558D1B4E1B9F00D10163 /* CalcUtil.m */; };
+		98082F841AE6693CE6126316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1249B4CD13CE1F98F4099283 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29988FC51B4C721E0045EA73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29988FAA1B4C721E0045EA73;
+			remoteInfo = TipEasyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03673E8E64A566F991BA35C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1249B4CD13CE1F98F4099283 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		292C27951B51037800C36DE0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		292C27971B51AB1F00C36DE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		292C27991B51E2EF00C36DE0 /* Icon_v4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon_v4; sourceTree = "<group>"; };
+		29988FAB1B4C721E0045EA73 /* TipEasyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipEasyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29988FAF1B4C721E0045EA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29988FB01B4C721E0045EA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29988FB21B4C721E0045EA73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29988FB31B4C721E0045EA73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29988FB91B4C721E0045EA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29988FC41B4C721E0045EA73 /* TipEasyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipEasyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29988FC91B4C721E0045EA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29988FCA1B4C721E0045EA73 /* TipEasyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipEasyAppTests.m; sourceTree = "<group>"; };
+		29988FD41B4C76C40045EA73 /* TEATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEATableViewController.h; sourceTree = "<group>"; };
+		29988FD51B4C76C40045EA73 /* TEATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEATableViewController.m; sourceTree = "<group>"; };
+		29988FD81B4C780A0045EA73 /* ExpandingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
+		29988FD91B4C780A0045EA73 /* ExpandingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		29988FDA1B4C780A0045EA73 /* ExpandingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
+		29988FE31B4CB1420045EA73 /* ResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultCell.h; path = TipEasyApp/ResultCell.h; sourceTree = "<group>"; };
+		29988FE41B4CB1420045EA73 /* ResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultCell.m; path = TipEasyApp/ResultCell.m; sourceTree = "<group>"; };
+		29988FE51B4CB1420045EA73 /* ResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultCell.xib; path = TipEasyApp/ResultCell.xib; sourceTree = "<group>"; };
+		29988FE81B4CB22A0045EA73 /* InputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCell.h; sourceTree = "<group>"; };
+		29988FE91B4CB22A0045EA73 /* InputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCell.m; sourceTree = "<group>"; };
+		29988FEA1B4CB22A0045EA73 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		29D4557B1B4DE46900D10163 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		29D4557E1B4DE8AA00D10163 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		29D4557F1B4DE8AA00D10163 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		29D455801B4DE8AA00D10163 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		29D455811B4DE8AA00D10163 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		29D455821B4DE8AA00D10163 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		29D455831B4DE8AA00D10163 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		29D455841B4DE8AA00D10163 /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		29D455851B4DE8AA00D10163 /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		29D4558C1B4E1B9F00D10163 /* CalcUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcUtil.h; sourceTree = "<group>"; };
+		29D4558D1B4E1B9F00D10163 /* CalcUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcUtil.m; sourceTree = "<group>"; };
+		DA0F594715FC73C3A5DE42E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29988FA81B4C721E0045EA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98082F841AE6693CE6126316 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29988FC11B4C721E0045EA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29988FA21B4C721E0045EA73 = {
+			isa = PBXGroup;
+			children = (
+				292C27971B51AB1F00C36DE0 /* Images.xcassets */,
+				292C27951B51037800C36DE0 /* LaunchScreen.xib */,
+				29988FC71B4C721E0045EA73 /* TipEasyAppTests */,
+				29988FAC1B4C721E0045EA73 /* Products */,
+				29988FAD1B4C721E0045EA73 /* TipEasyApp */,
+				FE90C32C5949C5BD1AEF3221 /* Pods */,
+				72C07E573A6B9DE6534AC9C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29988FAC1B4C721E0045EA73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29988FAB1B4C721E0045EA73 /* TipEasyApp.app */,
+				29988FC41B4C721E0045EA73 /* TipEasyAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29988FAD1B4C721E0045EA73 /* TipEasyApp */ = {
+			isa = PBXGroup;
+			children = (
+				29D455901B4E1BB900D10163 /* CalcUtil */,
+				29D4558A1B4DE8B300D10163 /* FontAwesome */,
+				29988FED1B4CB2340045EA73 /* InputCell */,
+				29988FD71B4C77E10045EA73 /* ExpandingCell */,
+				29988FE21B4CB0D20045EA73 /* ResultCell */,
+				29988FB21B4C721E0045EA73 /* AppDelegate.h */,
+				29988FB31B4C721E0045EA73 /* AppDelegate.m */,
+				29988FD41B4C76C40045EA73 /* TEATableViewController.h */,
+				29988FD51B4C76C40045EA73 /* TEATableViewController.m */,
+				29988FB81B4C721E0045EA73 /* Main.storyboard */,
+				29988FAE1B4C721E0045EA73 /* Supporting Files */,
+			);
+			path = TipEasyApp;
+			sourceTree = "<group>";
+		};
+		29988FAE1B4C721E0045EA73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				292C27991B51E2EF00C36DE0 /* Icon_v4 */,
+				29D4557B1B4DE46900D10163 /* fontawesome-webfont.ttf */,
+				29988FAF1B4C721E0045EA73 /* Info.plist */,
+				29988FB01B4C721E0045EA73 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29988FC71B4C721E0045EA73 /* TipEasyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				29988FCA1B4C721E0045EA73 /* TipEasyAppTests.m */,
+				29988FC81B4C721E0045EA73 /* Supporting Files */,
+			);
+			path = TipEasyAppTests;
+			sourceTree = "<group>";
+		};
+		29988FC81B4C721E0045EA73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29988FC91B4C721E0045EA73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29988FD71B4C77E10045EA73 /* ExpandingCell */ = {
+			isa = PBXGroup;
+			children = (
+				29988FD81B4C780A0045EA73 /* ExpandingCell.h */,
+				29988FD91B4C780A0045EA73 /* ExpandingCell.m */,
+				29988FDA1B4C780A0045EA73 /* ExpandingCell.xib */,
+			);
+			name = ExpandingCell;
+			sourceTree = "<group>";
+		};
+		29988FE21B4CB0D20045EA73 /* ResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				29988FE31B4CB1420045EA73 /* ResultCell.h */,
+				29988FE41B4CB1420045EA73 /* ResultCell.m */,
+				29988FE51B4CB1420045EA73 /* ResultCell.xib */,
+			);
+			name = ResultCell;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		29988FED1B4CB2340045EA73 /* InputCell */ = {
+			isa = PBXGroup;
+			children = (
+				29988FE81B4CB22A0045EA73 /* InputCell.h */,
+				29988FE91B4CB22A0045EA73 /* InputCell.m */,
+				29988FEA1B4CB22A0045EA73 /* InputCell.xib */,
+			);
+			name = InputCell;
+			sourceTree = "<group>";
+		};
+		29D4558A1B4DE8B300D10163 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				29D4557E1B4DE8AA00D10163 /* FAImageView.h */,
+				29D4557F1B4DE8AA00D10163 /* FAImageView.m */,
+				29D455801B4DE8AA00D10163 /* NSString+FontAwesome.h */,
+				29D455811B4DE8AA00D10163 /* NSString+FontAwesome.m */,
+				29D455821B4DE8AA00D10163 /* UIFont+FontAwesome.h */,
+				29D455831B4DE8AA00D10163 /* UIFont+FontAwesome.m */,
+				29D455841B4DE8AA00D10163 /* UIImage+FontAwesome.h */,
+				29D455851B4DE8AA00D10163 /* UIImage+FontAwesome.m */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		29D455901B4E1BB900D10163 /* CalcUtil */ = {
+			isa = PBXGroup;
+			children = (
+				29D4558C1B4E1B9F00D10163 /* CalcUtil.h */,
+				29D4558D1B4E1B9F00D10163 /* CalcUtil.m */,
+			);
+			name = CalcUtil;
+			sourceTree = "<group>";
+		};
+		72C07E573A6B9DE6534AC9C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1249B4CD13CE1F98F4099283 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE90C32C5949C5BD1AEF3221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03673E8E64A566F991BA35C0 /* Pods.debug.xcconfig */,
+				DA0F594715FC73C3A5DE42E2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29988FAA1B4C721E0045EA73 /* TipEasyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29988FCE1B4C721E0045EA73 /* Build configuration list for PBXNativeTarget "TipEasyApp" */;
+			buildPhases = (
+				C2A4C491D5621ED02CC704B8 /* Check Pods Manifest.lock */,
+				29988FA71B4C721E0045EA73 /* Sources */,
+				29988FA81B4C721E0045EA73 /* Frameworks */,
+				29988FA91B4C721E0045EA73 /* Resources */,
+				C25A48F3DDDA7753773E4545 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipEasyApp;
+			productName = TipEasyApp;
+			productReference = 29988FAB1B4C721E0045EA73 /* TipEasyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29988FC31B4C721E0045EA73 /* TipEasyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29988FD11B4C721E0045EA73 /* Build configuration list for PBXNativeTarget "TipEasyAppTests" */;
+			buildPhases = (
+				29988FC01B4C721E0045EA73 /* Sources */,
+				29988FC11B4C721E0045EA73 /* Frameworks */,
+				29988FC21B4C721E0045EA73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29988FC61B4C721E0045EA73 /* PBXTargetDependency */,
+			);
+			name = TipEasyAppTests;
+			productName = TipEasyAppTests;
+			productReference = 29988FC41B4C721E0045EA73 /* TipEasyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29988FA31B4C721E0045EA73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Leon Qi";
+				TargetAttributes = {
+					29988FAA1B4C721E0045EA73 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 83QDYHKJ32;
+					};
+					29988FC31B4C721E0045EA73 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 29988FAA1B4C721E0045EA73;
+					};
+				};
+			};
+			buildConfigurationList = 29988FA61B4C721E0045EA73 /* Build configuration list for PBXProject "TipEasyApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29988FA21B4C721E0045EA73;
+			productRefGroup = 29988FAC1B4C721E0045EA73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29988FAA1B4C721E0045EA73 /* TipEasyApp */,
+				29988FC31B4C721E0045EA73 /* TipEasyAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29988FA91B4C721E0045EA73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D4558B1B4DF05000D10163 /* fontawesome-webfont.ttf in Resources */,
+				292C279A1B51E2EF00C36DE0 /* Icon_v4 in Resources */,
+				29988FDC1B4C780A0045EA73 /* ExpandingCell.xib in Resources */,
+				292C27981B51AB1F00C36DE0 /* Images.xcassets in Resources */,
+				29988FBA1B4C721E0045EA73 /* Main.storyboard in Resources */,
+				292C27961B51037800C36DE0 /* LaunchScreen.xib in Resources */,
+				29988FEC1B4CB22A0045EA73 /* InputCell.xib in Resources */,
+				29988FE71B4CB1420045EA73 /* ResultCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29988FC21B4C721E0045EA73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C25A48F3DDDA7753773E4545 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A4C491D5621ED02CC704B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29988FA71B4C721E0045EA73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29D455861B4DE8AA00D10163 /* FAImageView.m in Sources */,
+				29D4558E1B4E1B9F00D10163 /* CalcUtil.m in Sources */,
+				29988FEB1B4CB22A0045EA73 /* InputCell.m in Sources */,
+				29988FDB1B4C780A0045EA73 /* ExpandingCell.m in Sources */,
+				29988FE61B4CB1420045EA73 /* ResultCell.m in Sources */,
+				29D455871B4DE8AA00D10163 /* NSString+FontAwesome.m in Sources */,
+				29988FD61B4C76C40045EA73 /* TEATableViewController.m in Sources */,
+				29988FB41B4C721E0045EA73 /* AppDelegate.m in Sources */,
+				29988FB11B4C721E0045EA73 /* main.m in Sources */,
+				29D455891B4DE8AA00D10163 /* UIImage+FontAwesome.m in Sources */,
+				29D455881B4DE8AA00D10163 /* UIFont+FontAwesome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29988FC01B4C721E0045EA73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29988FCB1B4C721E0045EA73 /* TipEasyAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29988FC61B4C721E0045EA73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29988FAA1B4C721E0045EA73 /* TipEasyApp */;
+			targetProxy = 29988FC51B4C721E0045EA73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29988FB81B4C721E0045EA73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29988FB91B4C721E0045EA73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29988FCC1B4C721E0045EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29988FCD1B4C721E0045EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29988FCF1B4C721E0045EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03673E8E64A566F991BA35C0 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TipEasyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		29988FD01B4C721E0045EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0F594715FC73C3A5DE42E2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TipEasyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		29988FD21B4C721E0045EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TipEasyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEasyApp.app/TipEasyApp";
+			};
+			name = Debug;
+		};
+		29988FD31B4C721E0045EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TipEasyAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEasyApp.app/TipEasyApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29988FA61B4C721E0045EA73 /* Build configuration list for PBXProject "TipEasyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29988FCC1B4C721E0045EA73 /* Debug */,
+				29988FCD1B4C721E0045EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29988FCE1B4C721E0045EA73 /* Build configuration list for PBXNativeTarget "TipEasyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29988FCF1B4C721E0045EA73 /* Debug */,
+				29988FD01B4C721E0045EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29988FD11B4C721E0045EA73 /* Build configuration list for PBXNativeTarget "TipEasyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29988FD21B4C721E0045EA73 /* Debug */,
+				29988FD31B4C721E0045EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29988FA31B4C721E0045EA73 /* Project object */;
+}

@@ -71,9 +71,9 @@ const int kTEAMAXPERSONS = 12;
 
     //setup data
     //reload saved data first
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
-    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
+//    
     self.sliderTitleArray = @[@"Tax Rate", @"Tip Percentage", @"Bill Splited By"];
     if (!self.sliderAmountArray) {
         self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
@@ -447,9 +447,9 @@ const int kTEAMAXPERSONS = 12;
 - (void)doCalculations {
     
     float total = self.totalBill;
-    float taxRate = [CalcUtil stringToNumber:self.sliderAmountArray[0]];
-    float tipRate = [CalcUtil stringToNumber:self.sliderAmountArray[1]];
-    int billSplitCount = (int)[CalcUtil stringToNumber:self.sliderAmountArray[2]];
+    float taxRate = [CalcUtil stringToNumber:self.sliderAmountArray[TEASlidersSectionTaxRateRow]];
+    float tipRate = [CalcUtil stringToNumber:self.sliderAmountArray[TEASlidersSectionTipRateRow]];
+    int billSplitCount = (int)[CalcUtil stringToNumber:self.sliderAmountArray[TEASlidersSectionBillSplitRow]];
     self.grandTotalAmount = [CalcUtil calcGrandTotal:total withTaxRate:taxRate andTipRate:tipRate];
     self.taxAmount = [CalcUtil calcTaxAmount:total withTaxRate:taxRate];
     self.tipAmount = [CalcUtil calcTipAmount:total withTaxRate:taxRate andTipRate:tipRate];

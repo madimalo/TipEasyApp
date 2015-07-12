@@ -51,7 +51,8 @@
 #pragma mark -
 #pragma mark Calculations
 + (float)calcGrandTotal:(float)amount withTaxRate:(float)taxRate andTipRate:(float)tipRate {
-    return ((amount / (1.0+taxRate)) * (1.0+tipRate));
+    float tipAmount = [CalcUtil calcTipAmount:amount withTaxRate:taxRate andTipRate:tipRate];
+    return (amount+tipAmount);
 }
 
 + (float)calcTaxAmount:(float)amount withTaxRate:(float)taxRate {

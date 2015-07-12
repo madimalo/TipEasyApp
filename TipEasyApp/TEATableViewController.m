@@ -28,7 +28,6 @@
 //section sliders
 @property (strong, nonatomic) NSArray *sliderTitleArray;
 @property (strong, nonatomic) NSMutableArray *sliderAmountArray; //defaults of slider values
-//@property (nonatomic, strong) NSMutableArray *sliderArray; // of ASValueTrackingSliders
 @property (strong, nonatomic) NSArray *hintArray;
 //setup keyboard
 @property (nonatomic, strong) BSKeyboardControls *keyboardControls;
@@ -150,7 +149,7 @@ const int kTEAMAXPERSONS = 12;
         case TEATableViewSectionSliders:
             return @"You may click each row to reset each value.";
         case TEATableViewSectionResults:
-            return @"You may choose the amount to pay.";
+            return @"You may choose the amount to pay.\n\n*Note: tip is calculated on pre-tax amount.";
         default:
             return @"";
     }
@@ -164,8 +163,7 @@ const int kTEAMAXPERSONS = 12;
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"InputCell" owner:self options:nil];
             cell = (InputCell *)[nib objectAtIndex:0];
         }
-        //cell.clipsToBounds = YES;
-        //after done button do calculation
+
         self.inputTextField = cell.inputTextField;
         NSArray *fields = @[self.inputTextField];
         self.keyboardControls = [[BSKeyboardControls alloc] initWithFields:fields];
@@ -175,9 +173,6 @@ const int kTEAMAXPERSONS = 12;
         [self updateUIForInputTextField];
         
         return cell;
-        
-        //NOT USING IT ANYMORE
-        //return [self setupInputTextFieldInsideCell];
         
     } else if (indexPath.section == TEATableViewSectionSliders) {
         ExpandingCell *cell = (ExpandingCell *)[tableView dequeueReusableCellWithIdentifier:@"ExpandingCell" forIndexPath:indexPath];
@@ -224,7 +219,6 @@ const int kTEAMAXPERSONS = 12;
             //slider changing values
             cell.slider.continuous = YES;
             
-            //self.sliderArray[indexPath.row] = cell.slider;
             //self.trackingSlider = cell.slider;
             //self.sliderLabel = cell.detailLabel;
             [cell.slider addTarget:self
@@ -285,7 +279,6 @@ const int kTEAMAXPERSONS = 12;
 }
 
 - (void)sliderValueChanged:(id)sender {
-    //ASValueTrackingSlider *trackingSlider = (ASValueTrackingSlider *)self.sliderArray[self.selectedIndex];
     float sliderValue = self.trackingSlider.value;
     if (sliderValue > kTEAMAXRATE) {
         //increment 1 by 1
@@ -383,7 +376,6 @@ const int kTEAMAXPERSONS = 12;
 #pragma mark section Sliders - setup slider
 
 - (void)setupSlider:(ASValueTrackingSlider *)slider withValue:(float)value displayForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO - Need to fix slider reuser bugs
     
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     

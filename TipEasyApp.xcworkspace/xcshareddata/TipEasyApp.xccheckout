@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0BC8D20-FDB1-4C97-ACC3-7839FED8144C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TipEasyApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>300B9CAADF87E2F83EB30A84B16F711588986885</key>
+		<string>https://github.com/madimalo/TipEasyApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TipEasyApp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>300B9CAADF87E2F83EB30A84B16F711588986885</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/madimalo/TipEasyApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>300B9CAADF87E2F83EB30A84B16F711588986885</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>300B9CAADF87E2F83EB30A84B16F711588986885</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TipEasyApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

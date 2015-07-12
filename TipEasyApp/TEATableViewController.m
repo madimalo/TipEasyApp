@@ -83,14 +83,11 @@ const int kTEAMAXPERSONS = 12;
     
     self.amountTitleArray = @[@"Bill Total", @"Tax Included", @"Tip to Pay", @"Total to Pay", @"Each to Pay"];
     
-    //
-    //http://stackoverflow.com/questions/23526756/unable-to-dequeue-a-cell-with-identifier-cell-must-register-a-nib-or-a-class-f
-    //
     [self.tableView registerNib:[UINib nibWithNibName:@"InputCell" bundle:nil] forCellReuseIdentifier:@"InputCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"ExpandingCell" bundle:nil] forCellReuseIdentifier:@"ExpandingCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"ResultCell" bundle:nil] forCellReuseIdentifier:@"ResultCell"];
     
-    //setup
+    //setup keyboard filter
     self.numeric = YES;
     self.decimalNumeric = YES;
     self.maxCharacters = 8;
@@ -205,12 +202,13 @@ const int kTEAMAXPERSONS = 12;
         //setup slider
         [self setupSlider:cell.slider withValue:sliderValue displayForRowAtIndexPath:indexPath];
         
+        self.sliderLabel = cell.detailLabel;
+        self.trackingSlider = cell.slider;
+        
         //expand cell
         if (self.selectedIndex == indexPath.row) {
 
             cell.backgroundColor = [UIColor lightGrayColor];
-            // contentView is not whole cell
-            //cell.contentView.backgroundColor = [UIColor lightGrayColor];
             cell.titleLabel.textColor = [UIColor whiteColor];
             cell.titleLabel.font = [UIFont fontWithName:@"OriyaSangamMN-Bold" size:18];
             cell.detailLabel.textColor = [UIColor whiteColor];
@@ -227,8 +225,8 @@ const int kTEAMAXPERSONS = 12;
             cell.slider.continuous = YES;
             
             //self.sliderArray[indexPath.row] = cell.slider;
-            self.trackingSlider = cell.slider;
-            self.sliderLabel = cell.detailLabel;
+            //self.trackingSlider = cell.slider;
+            //self.sliderLabel = cell.detailLabel;
             [cell.slider addTarget:self
                             action:@selector(sliderValueChanged:)
                   forControlEvents:UIControlEventValueChanged];

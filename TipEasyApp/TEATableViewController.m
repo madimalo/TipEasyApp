@@ -283,6 +283,9 @@ const int kTEAMAXPERSONS = 12;
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:floorf(sliderValue)];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:floorf(sliderValue)]];
     } else {
+        float sliderValue100 = sliderValue * 100.0;
+        sliderValue = floorf(sliderValue100) / 100.0;
+        [self.trackingSlider setValue:sliderValue animated:NO];
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }

@@ -72,9 +72,9 @@ const int kTEAMAXPERSONS = 12;
 
     //setup data
     //reload saved data first
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
-    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
+//    
     self.sliderTitleArray = @[@"Tax Rate", @"Tip Percentage", @"Bill Splited By"];
     if (!self.sliderAmountArray) {
         self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
@@ -149,7 +149,7 @@ const int kTEAMAXPERSONS = 12;
         case TEATableViewSectionSliders:
             return @"You may click each row to reset each value.";
         case TEATableViewSectionResults:
-            return @"You may choose the amount to pay.\n\n*Note: 1. Tip is calculated on pre-tax amount. If you want to pay on after-tax amount, simply set the tax rate to 0%. 2. If the whole percentage points tax rate do not apply to your province or state, please select the nearest percentage point, then tip will be less than plus or minus 1%.";
+            return @"You may choose the amount to pay.\n\n*Note: 1. Tip is calculated on pre-tax amount. If you prefer paying on after-tax amount, simply set the tax rate to 0%. 2. If the full percentage points tax rate do not apply to your province or state, please set to the nearest percentage point, then tip will be approximately plus or minus 1% than the real result.";
         default:
             return @"";
     }

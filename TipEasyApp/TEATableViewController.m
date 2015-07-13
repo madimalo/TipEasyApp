@@ -52,7 +52,8 @@
 
 //slider min, max values confiuration
 const float kTEAMINRATE = 0;
-const float kTEAMAXRATE = 0.3;
+const float kTEATAXMAXRATE = 0.2;
+const float kTEATIPMAXRATE = 0.3;
 
 const int kTEAMINPERSONS = 1;
 const int kTEAMAXPERSONS = 12;
@@ -148,7 +149,7 @@ const int kTEAMAXPERSONS = 12;
         case TEATableViewSectionSliders:
             return @"You may click each row to reset each value.";
         case TEATableViewSectionResults:
-            return @"You may choose the amount to pay.\n\n*Note: 1. Tip is calculated on pre-tax amount. If you want to pay on after-tax amount, simply set the tax rate to 0%. 2. If tax rate is not integer percentage point in your province/state, please select the nearest percentage point for calculation results to be as accurate as possible."; 
+            return @"You may choose the amount to pay.\n\n*Note: 1. Tip is calculated on pre-tax amount. If you want to pay on after-tax amount, simply set the tax rate to 0%. 2. If the whole percentage points tax rate do not apply to your province or state, please select the nearest percentage point, then tip will be less than plus or minus 1%.";
         default:
             return @"";
     }
@@ -277,7 +278,7 @@ const int kTEAMAXPERSONS = 12;
 
 - (void)sliderValueChanged:(id)sender {
     float sliderValue = self.trackingSlider.value;
-    if (sliderValue > kTEAMAXRATE) {
+    if (sliderValue > kTEATIPMAXRATE) {
         //increment 1 by 1
         [self.trackingSlider setValue:floorf(sliderValue) animated:NO];
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:floorf(sliderValue)];
@@ -383,14 +384,14 @@ const int kTEAMAXPERSONS = 12;
         [formatter setNumberStyle:NSNumberFormatterPercentStyle];
         [slider setNumberFormatter:formatter];
         slider.minimumValue = kTEAMINRATE;
-        slider.maximumValue = kTEAMAXRATE;
-        if (value >= kTEAMINRATE && value <= kTEAMAXRATE) {
+        slider.maximumValue = kTEATAXMAXRATE;
+        if (value >= kTEAMINRATE && value <= kTEATAXMAXRATE) {
             slider.value = value;
         } else {
-            slider.value = (kTEAMAXRATE + kTEAMINRATE) / 2;
+            slider.value = (kTEATAXMAXRATE + kTEAMINRATE) / 2;
         }
         slider.minimumValue = kTEAMINRATE;
-        slider.maximumValue = kTEAMAXRATE;
+        slider.maximumValue = kTEATAXMAXRATE;
         slider.minimumValueImage = [UIImage imageWithIcon:@"fa-arrow-circle-down" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:20];
         slider.maximumValueImage = [UIImage imageWithIcon:@"fa-arrow-circle-up" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:20];
         
@@ -404,11 +405,11 @@ const int kTEAMAXPERSONS = 12;
         [formatter setNumberStyle:NSNumberFormatterPercentStyle];
         [slider setNumberFormatter:formatter];
         slider.minimumValue = kTEAMINRATE;
-        slider.maximumValue = kTEAMAXRATE;
-        if (value >= kTEAMINRATE && value <= kTEAMAXRATE) {
+        slider.maximumValue = kTEATIPMAXRATE;
+        if (value >= kTEAMINRATE && value <= kTEATIPMAXRATE) {
             slider.value = value;
         } else {
-            slider.value = (kTEAMAXRATE + kTEAMINRATE) / 2;
+            slider.value = (kTEATIPMAXRATE + kTEAMINRATE) / 2;
         }
         
         slider.minimumValueImage = [UIImage imageWithIcon:@"fa-frown-o" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:20];

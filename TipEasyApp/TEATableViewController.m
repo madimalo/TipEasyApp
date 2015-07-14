@@ -46,17 +46,19 @@
 @property (nonatomic) float tipAmount;
 @property (nonatomic) float eachPayAmount;
 
+@property (strong, nonatomic) UIView *grayView;
+
 @end
 
 @implementation TEATableViewController
 
-//slider min, max values confiuration
+//slider min, max values configuration
 const float kTEAMINRATE = 0;
 const float kTEATAXMAXRATE = 0.15;
 const float kTEATIPMAXRATE = 0.3;
 
 const int kTEAMINPERSONS = 1;
-const int kTEAMAXPERSONS = 12;
+const int kTEAMAXPERSONS = 10;
 
 - (void)viewDidLoad {
     
@@ -94,17 +96,27 @@ const int kTEAMAXPERSONS = 12;
     self.maxCharacters = 8;
     
     //add different color on top bouncing area
-    //FIXME: error on lanscape mode -fixed. Now only allow portrait mode.
+    //Only works for Portrait Mode
     CGRect frame = self.tableView.bounds;
     frame.origin.y = -frame.size.height;
-    UIView *grayView = [[UIView alloc] initWithFrame:frame];
-    grayView.backgroundColor = [UIColor lightGrayColor];
-    [self.tableView addSubview:grayView];
+    self.grayView = [[UIView alloc] initWithFrame:frame];
+    self.grayView.backgroundColor = [UIColor lightGrayColor];
+    [self.tableView addSubview:self.grayView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+
+    if (UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
+        self.grayView.hidden = YES;
+    } else {
+        self.grayView.hidden = NO;
+    }
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
 #pragma mark -
@@ -283,35 +295,33 @@ const int kTEAMAXPERSONS = 12;
 
 - (void)sliderValueChanged:(id)sender {
     float sliderValue = self.trackingSlider.value;
-    if (sliderValue > kTEATIPMAXRATE) {
+    if (self.selectedIndex == TEASlidersSectionBillSplitRow) {
         //increment 1 by 1
-        [self.trackingSlider setValue:floorf(sliderValue) animated:NO];
-        self.sliderLabel.text = [CalcUtil numberToPercentStyle:floorf(sliderValue)];
-        [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:floorf(sliderValue)]];
-    } else {
-        if (self.selectedIndex == TEASlidersSectionTaxRateRow) {
-            
-            //increment by 0.25
-            float sliderValue100 = sliderValue * 100;
-            float intPartValue = floorf(sliderValue100);
-            float decimalPartValue = sliderValue100 - intPartValue;
-            
-            float decimalPartValue4 = decimalPartValue * 4;
-            float decimalPartValue25 = floorf(decimalPartValue4) / 4;
-            
-            sliderValue = (intPartValue + decimalPartValue25) / 100.0;
-            self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
-            
-        } else {
-            float sliderValue100 = sliderValue * 100.0;
-            sliderValue = floorf(sliderValue100) / 100.0;
-            self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
-        }
-        
+        sliderValue = floorf(sliderValue);
         [self.trackingSlider setValue:sliderValue animated:NO];
+        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        [self.sliderAmountArray replaceObjectAtIndex:TEASlidersSectionBillSplitRow withObject:[CalcUtil numberToString:sliderValue]];
+    } else if (self.selectedIndex == TEASlidersSectionTaxRateRow) {
+        //increment by 0.25
+        float sliderValue100 = sliderValue * 100;
+        float intPartValue = floorf(sliderValue100);
+        float decimalPartValue = sliderValue100 - intPartValue;
         
-        [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
+        float decimalPartValue4 = decimalPartValue * 4;
+        float decimalPartValue25 = floorf(decimalPartValue4) / 4;
+            
+        sliderValue = (intPartValue + decimalPartValue25) / 100.0;
+        [self.trackingSlider setValue:sliderValue animated:NO];
+        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
+        [self.sliderAmountArray replaceObjectAtIndex:TEASlidersSectionTaxRateRow withObject:[CalcUtil numberToString:sliderValue]];
+    }else {
+        float sliderValue100 = sliderValue * 100.0;
+        sliderValue = floorf(sliderValue100) / 100.0;
+        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        [self.trackingSlider setValue:sliderValue animated:NO];
+        [self.sliderAmountArray replaceObjectAtIndex:TEAResultsSectionTipPaidRow withObject:[CalcUtil numberToString:sliderValue]];
     }
+    
     [self doCalculations];
     [self reloadResultsSection];
     [self saveData];

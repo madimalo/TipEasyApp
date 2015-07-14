@@ -300,7 +300,7 @@ const int kTEAMAXPERSONS = 10;
         sliderValue = floorf(sliderValue);
         [self.trackingSlider setValue:sliderValue animated:NO];
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
-        [self.sliderAmountArray replaceObjectAtIndex:TEASlidersSectionBillSplitRow withObject:[CalcUtil numberToString:sliderValue]];
+        [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     } else if (self.selectedIndex == TEASlidersSectionTaxRateRow) {
         //increment by 0.25
         float sliderValue100 = sliderValue * 100;
@@ -313,13 +313,13 @@ const int kTEAMAXPERSONS = 10;
         sliderValue = (intPartValue + decimalPartValue25) / 100.0;
         [self.trackingSlider setValue:sliderValue animated:NO];
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
-        [self.sliderAmountArray replaceObjectAtIndex:TEASlidersSectionTaxRateRow withObject:[CalcUtil numberToString:sliderValue]];
+        [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }else {
         float sliderValue100 = sliderValue * 100.0;
         sliderValue = floorf(sliderValue100) / 100.0;
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
         [self.trackingSlider setValue:sliderValue animated:NO];
-        [self.sliderAmountArray replaceObjectAtIndex:TEAResultsSectionTipPaidRow withObject:[CalcUtil numberToString:sliderValue]];
+        [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }
     
     [self doCalculations];

@@ -365,7 +365,7 @@ const int kTEAMAXPERSONS = 12;
     self.inputTextField.backgroundColor = [UIColor clearColor];
     //remove cursor
     //self.inputTextField.tintColor = [UIColor clearColor];
-    //self.inputTextField.placeholder = @"Enter here to begin...";
+    self.inputTextField.placeholder = @"Tap here to begin...";
     //placeholder image
     self.inputTextField.leftViewMode = UITextFieldViewModeAlways;
     UIImage *calcImage = [UIImage imageWithIcon:@"fa-calculator" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:20];

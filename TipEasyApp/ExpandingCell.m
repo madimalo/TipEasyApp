@@ -30,15 +30,4 @@
     [self.superview bringSubviewToFront:self];
 }
 
-//- (void)sliderDidHidePopUpView:(ASValueTrackingSlider *)slider {
-//    
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    
-//    if (!appDelegate.isAppActive) {
-//        [self removeFromSuperview];
-//    }
-//
-//    
-//}
-
 @end

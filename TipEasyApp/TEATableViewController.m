@@ -52,7 +52,7 @@
 
 //slider min, max values confiuration
 const float kTEAMINRATE = 0;
-const float kTEATAXMAXRATE = 0.2;
+const float kTEATAXMAXRATE = 0.15;
 const float kTEATIPMAXRATE = 0.3;
 
 const int kTEAMINPERSONS = 1;
@@ -150,7 +150,7 @@ const int kTEAMAXPERSONS = 12;
         case TEATableViewSectionSliders:
             return @"You may click each row to reset each value.";
         case TEATableViewSectionResults:
-            return @"You may choose the amount to pay.\n\n*Note: 1. Tip is calculated on pre-tax amount. If you prefer paying on after-tax amount, simply set the tax rate to 0%. 2. If the full percentage points tax rate do not apply to your province or state, please set to the nearest percentage point, then tip will be approximately plus or minus 1% than the real result.";
+            return @"You may choose the amount to pay.\n\n*Note: Tip is calculated on pre-tax amount. If you prefer paying on after-tax amount, simply set the tax rate to 0.00%.";
         default:
             return @"";
     }
@@ -186,7 +186,11 @@ const int kTEAMAXPERSONS = 12;
         cell.hintLabel.text = self.hintArray[indexPath.row];
         
         float sliderValue = [CalcUtil stringToNumber:self.sliderAmountArray[indexPath.row]];
-        cell.detailLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        if (indexPath.row == TEASlidersSectionTaxRateRow) {
+            cell.detailLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
+        } else {
+            cell.detailLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        }
         
         //add angle-down image
         UIImage *angleImage = [UIImage imageWithIcon:@"fa-angle-down" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:20];
@@ -285,10 +289,27 @@ const int kTEAMAXPERSONS = 12;
         self.sliderLabel.text = [CalcUtil numberToPercentStyle:floorf(sliderValue)];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:floorf(sliderValue)]];
     } else {
-        float sliderValue100 = sliderValue * 100.0;
-        sliderValue = floorf(sliderValue100) / 100.0;
+        if (self.selectedIndex == TEASlidersSectionTaxRateRow) {
+            
+            //increment by 0.25
+            float sliderValue100 = sliderValue * 100;
+            float intPartValue = floorf(sliderValue100);
+            float decimalPartValue = sliderValue100 - intPartValue;
+            
+            float decimalPartValue4 = decimalPartValue * 4;
+            float decimalPartValue25 = floorf(decimalPartValue4) / 4;
+            
+            sliderValue = (intPartValue + decimalPartValue25) / 100.0;
+            self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
+            
+        } else {
+            float sliderValue100 = sliderValue * 100.0;
+            sliderValue = floorf(sliderValue100) / 100.0;
+            self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        }
+        
         [self.trackingSlider setValue:sliderValue animated:NO];
-        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }
     [self doCalculations];
@@ -383,6 +404,7 @@ const int kTEAMAXPERSONS = 12;
     
     if (indexPath.row == TEASlidersSectionTaxRateRow) {
         [formatter setNumberStyle:NSNumberFormatterPercentStyle];
+        [formatter setMinimumFractionDigits:2];
         [slider setNumberFormatter:formatter];
         slider.minimumValue = kTEAMINRATE;
         slider.maximumValue = kTEATAXMAXRATE;

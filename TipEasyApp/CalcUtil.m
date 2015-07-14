@@ -41,6 +41,19 @@
     return [numberFormatter stringFromNumber:number];
 }
 
++ (NSString *)numberToPercentStyle:(float)floatNumber withFractionDigits:(int)digitCount {
+    
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterPercentStyle];
+    
+    [numberFormatter setMinimumFractionDigits:digitCount];
+    [numberFormatter setMaximumFractionDigits:digitCount]; //optional
+    
+    NSNumber *number = [NSNumber numberWithFloat:floatNumber];
+    return [numberFormatter stringFromNumber:number];
+    
+}
+
 + (NSString *)numberToCurrencyFormat:(float)floatNumber {
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];

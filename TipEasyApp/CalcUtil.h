@@ -14,6 +14,7 @@
 + (float)stringToNumber:(NSString *)string;
 + (NSString *)numberToString:(float)floatNumber;
 + (NSString *)numberToPercentStyle:(float)floatNumber;
++ (NSString *)numberToPercentStyle:(float)floatNumber withFractionDigits:(int)digitCount;
 + (NSString *)numberToCurrencyFormat:(float)floatNumber;
 
 //calculations

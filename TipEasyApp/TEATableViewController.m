@@ -71,7 +71,7 @@ const int kTEAMAXPERSONS = 12;
     //setup data
     //reload saved data first
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults objectForKey:@"hasLaunchOnce"]) {
+    if ([defaults objectForKey:@"hasLaunchedOnce"]) {
         self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
     } else {
         [defaults setBool:YES forKey:@"hasLaunchedOnce"];

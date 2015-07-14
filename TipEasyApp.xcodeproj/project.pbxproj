@@ -43,6 +43,7 @@
 /* Begin PBXFileReference section */
 		03673E8E64A566F991BA35C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1249B4CD13CE1F98F4099283 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		291E37301B54A016002A94BD /* TipEasyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TipEasyApp.entitlements; sourceTree = "<group>"; };
 		292C27951B51037800C36DE0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		292C27971B51AB1F00C36DE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		292C27991B51E2EF00C36DE0 /* Icon_v4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon_v4; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		29988FAD1B4C721E0045EA73 /* TipEasyApp */ = {
 			isa = PBXGroup;
 			children = (
+				291E37301B54A016002A94BD /* TipEasyApp.entitlements */,
 				29D455901B4E1BB900D10163 /* CalcUtil */,
 				29D4558A1B4DE8B300D10163 /* FontAwesome */,
 				29988FED1B4CB2340045EA73 /* InputCell */,
@@ -291,6 +293,14 @@
 					29988FAA1B4C721E0045EA73 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 83QDYHKJ32;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					29988FC31B4C721E0045EA73 = {
 						CreatedOnToolsVersion = 6.4;

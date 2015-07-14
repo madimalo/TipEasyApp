@@ -60,8 +60,6 @@ const int kTEAMAXPERSONS = 12;
 
 - (void)viewDidLoad {
     
-    //NSLog(@"The stored sliderAmountArray is %@", self.sliderAmountArray);
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -72,13 +70,16 @@ const int kTEAMAXPERSONS = 12;
 
     //setup data
     //reload saved data first
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
-//    
-    self.sliderTitleArray = @[@"Tax Rate", @"Tip Percentage", @"Bill Splited By"];
-    if (!self.sliderAmountArray) {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"hasLaunchOnce"]) {
+        self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
+    } else {
+        [defaults setBool:YES forKey:@"hasLaunchedOnce"];
+        [defaults synchronize];
         self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
     }
+    
+    self.sliderTitleArray = @[@"Tax Rate", @"Tip Percentage", @"Bill Splited By"];
     self.hintArray = @[@"Hint: set the total tax rate for this payment.", @"Hint: set the tip precentage you want to give.", @"Hint: set how many bills you want to split."];
     
     self.amountTitleArray = @[@"Bill Total", @"Tax Included", @"Tip to Pay", @"Total to Pay", @"Each to Pay"];

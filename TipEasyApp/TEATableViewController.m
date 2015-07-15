@@ -12,7 +12,6 @@
 #import "ResultCell.h"
 #import "BSKeyboardControls.h"
 #import "ASValueTrackingSlider.h"
-#import "ASValuePopUpView.h"
 #import "UIImage+FontAwesome.h"
 #import "CalcUtil.h"
 
@@ -422,9 +421,9 @@ const int kTEAMAXPERSONS = 10;
         slider.maximumValueImage = [UIImage imageWithIcon:@"fa-smile-o" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:20];
     
         slider.font = [UIFont fontWithName:@"OriyaSangamMN-Bold" size:16];
-        slider.textColor = [UIColor lightGrayColor];
-        slider.popUpViewColor = [UIColor whiteColor];
-        slider.popUpViewAnimatedColors = @[[UIColor redColor], [UIColor whiteColor], [UIColor greenColor]];
+        slider.textColor = [UIColor whiteColor];
+        //slider.popUpViewColor = [UIColor whiteColor];
+        slider.popUpViewAnimatedColors = @[[UIColor redColor], [UIColor greenColor]];
         
     } else {
         [formatter setNumberStyle:NSNumberFormatterNoStyle];

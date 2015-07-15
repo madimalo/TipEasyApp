@@ -21,6 +21,7 @@
 		29988FE71B4CB1420045EA73 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FE51B4CB1420045EA73 /* ResultCell.xib */; };
 		29988FEB1B4CB22A0045EA73 /* InputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FE91B4CB22A0045EA73 /* InputCell.m */; };
 		29988FEC1B4CB22A0045EA73 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FEA1B4CB22A0045EA73 /* InputCell.xib */; };
+		29D196DA1B55D72300F1790E /* InputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D196D91B55D72300F1790E /* InputTextField.m */; };
 		29D455861B4DE8AA00D10163 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4557F1B4DE8AA00D10163 /* FAImageView.m */; };
 		29D455871B4DE8AA00D10163 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455811B4DE8AA00D10163 /* NSString+FontAwesome.m */; };
 		29D455881B4DE8AA00D10163 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455831B4DE8AA00D10163 /* UIFont+FontAwesome.m */; };
@@ -67,6 +68,8 @@
 		29988FE81B4CB22A0045EA73 /* InputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCell.h; sourceTree = "<group>"; };
 		29988FE91B4CB22A0045EA73 /* InputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCell.m; sourceTree = "<group>"; };
 		29988FEA1B4CB22A0045EA73 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		29D196D81B55D72300F1790E /* InputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextField.h; sourceTree = "<group>"; };
+		29D196D91B55D72300F1790E /* InputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextField.m; sourceTree = "<group>"; };
 		29D4557B1B4DE46900D10163 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		29D4557E1B4DE8AA00D10163 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
 		29D4557F1B4DE8AA00D10163 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				29988FD51B4C76C40045EA73 /* TEATableViewController.m */,
 				29988FB81B4C721E0045EA73 /* Main.storyboard */,
 				29988FAE1B4C721E0045EA73 /* Supporting Files */,
+				29D196D81B55D72300F1790E /* InputTextField.h */,
+				29D196D91B55D72300F1790E /* InputTextField.m */,
 			);
 			path = TipEasyApp;
 			sourceTree = "<group>";
@@ -398,6 +403,7 @@
 				29D455871B4DE8AA00D10163 /* NSString+FontAwesome.m in Sources */,
 				29988FD61B4C76C40045EA73 /* TEATableViewController.m in Sources */,
 				29988FB41B4C721E0045EA73 /* AppDelegate.m in Sources */,
+				29D196DA1B55D72300F1790E /* InputTextField.m in Sources */,
 				29988FB11B4C721E0045EA73 /* main.m in Sources */,
 				29D455891B4DE8AA00D10163 /* UIImage+FontAwesome.m in Sources */,
 				29D455881B4DE8AA00D10163 /* UIFont+FontAwesome.m in Sources */,

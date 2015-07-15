@@ -205,7 +205,7 @@ const int kTEAMAXPERSONS = 10;
         }
         
         //add angle-down image
-        UIImage *angleImage = [UIImage imageWithIcon:@"fa-angle-down" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:20];
+        UIImage *angleImage = [UIImage imageWithIcon:@"fa-angle-down" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:25];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:angleImage];
         cell.accessoryView = imageView;
         
@@ -227,7 +227,7 @@ const int kTEAMAXPERSONS = 10;
             cell.detailLabel.font = [UIFont fontWithName:@"OriyaSangamMN-Bold" size:18];
             
             //change angle-down to angle-up image
-            UIImage *angleImage = [UIImage imageWithIcon:@"fa-angle-up" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:20];
+            UIImage *angleImage = [UIImage imageWithIcon:@"fa-angle-up" backgroundColor:[UIColor clearColor] iconColor:[UIColor whiteColor] fontSize:25];
             UIImageView *imageView = [[UIImageView alloc] initWithImage:angleImage];
             cell.accessoryView = imageView;
             
@@ -352,55 +352,28 @@ const int kTEAMAXPERSONS = 10;
     if (indexPath.section == TEATableViewSectionSliders && self.selectedIndex == indexPath.row) {
         return 130;
     }
+    if (indexPath.section == TEATableViewSectionInputField) {
+        return 55;
+    }
     return 44;
 }
 
 #pragma mark -
 #pragma mark section InputField - setup textfield
-// Create inputTextField - NOT USING IT ANYMORE
-//- (UITableViewCell *)setupInputTextFieldInsideCell {
-//    UITableViewCell *cell = [[UITableViewCell alloc] init];
-//    //config cell appearance
-//    //cell.contentView.backgroundColor = [UIColor lightGrayColor];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    
-//    self.inputTextField = [[UITextField alloc]initWithFrame:CGRectMake(30,5,260,34)]; //need to use auto layout
-//    NSArray *fields = @[self.inputTextField];
-//    self.keyboardControls = [[BSKeyboardControls alloc] initWithFields:fields];
-//    
-//    self.keyboardControls.delegate = self;
-//    self.inputTextField.delegate = self;
-//    
-//    self.inputTextField.borderStyle = UITextBorderStyleRoundedRect;
-//    
-//    self.inputTextField.textAlignment = NSTextAlignmentCenter;
-//    self.inputTextField.backgroundColor = [UIColor clearColor];
-//    self.inputTextField.placeholder = @"Enter here to begin...";
-//    //placeholder image
-//    self.inputTextField.leftViewMode = UITextFieldViewModeAlways;
-//    UIImage *calcImage = [UIImage imageWithIcon:@"fa-calculator" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:20];
-//    self.inputTextField.leftView = [[UIImageView alloc] initWithImage:calcImage];
-//    self.inputTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-//    
-//    self.inputTextField.keyboardType = UIKeyboardTypeDecimalPad;
-//    [cell.contentView addSubview:self.inputTextField];
-//    
-//    return cell;
-//}
 
 - (void)updateUIForInputTextField {
     
-    //self.inputTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.inputTextField.borderStyle = UITextBorderStyleRoundedRect;
     
     //self.inputTextField.textAlignment = NSTextAlignmentCenter;
-    self.inputTextField.backgroundColor = [UIColor clearColor];
+    self.inputTextField.backgroundColor = [UIColor whiteColor];
     //remove cursor
     //self.inputTextField.tintColor = [UIColor clearColor];
-    self.inputTextField.placeholder = @"Tap here to begin...";
+    //self.inputTextField.placeholder = @"Tap here to begin...";
     //placeholder image
     self.inputTextField.leftViewMode = UITextFieldViewModeAlways;
-    UIImage *calcImage = [UIImage imageWithIcon:@"fa-calculator" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:20];
-    self.inputTextField.leftView = [[UIImageView alloc] initWithImage:calcImage];
+    UIImage *calcImage = [UIImage imageWithIcon:@"fa-calculator" backgroundColor:[UIColor clearColor] iconColor:[UIColor lightGrayColor] fontSize:25];
+    self.inputTextField.leftView = [[UIImageView alloc] initWithImage:calcImage] ;
     self.inputTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
 
 }
@@ -599,6 +572,21 @@ const int kTEAMAXPERSONS = 10;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.sliderAmountArray forKey:@"sliderAmountArray"];
     [defaults synchronize];
+}
+
+#pragma mark -
+#pragma mark Helper
+
+-(UIView*)paddingViewWithImage:(UIImageView*)imageView andPadding:(float)padding
+{
+    float height = CGRectGetHeight(imageView.frame);
+    float width =  CGRectGetWidth(imageView.frame);
+    
+    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    
+    [paddingView addSubview:imageView];
+    
+    return paddingView;
 }
 
 @end

@@ -35,8 +35,13 @@
 @property (nonatomic) BOOL decimalNumeric;
 @property (nonatomic) NSInteger maxCharacters;
 //setup to reference slider
-@property (nonatomic, strong) ASValueTrackingSlider *trackingSlider;
-@property (nonatomic, strong) UILabel *sliderLabel;
+@property (nonatomic, strong) ASValueTrackingSlider *taxSlider;
+@property (nonatomic, strong) ASValueTrackingSlider *tipSlider;
+@property (nonatomic, strong) ASValueTrackingSlider *billSplitSlider;
+@property (nonatomic, strong) UILabel *taxSliderLabel;
+@property (nonatomic, strong) UILabel *tipSliderLabel;
+@property (nonatomic, strong) UILabel *billSplitSliderLabel;
+
 
 //section results
 @property (strong, nonatomic) NSArray *amountTitleArray;
@@ -197,10 +202,22 @@ const int kTEAMAXPERSONS = 10;
         cell.hintLabel.text = self.hintArray[indexPath.row];
         
         float sliderValue = [CalcUtil stringToNumber:self.sliderAmountArray[indexPath.row]];
+        
+        //setup slider
+        [self setupSlider:cell.slider withValue:sliderValue displayForRowAtIndexPath:indexPath];
+        
         if (indexPath.row == TEASlidersSectionTaxRateRow) {
             cell.detailLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
-        } else {
+            self.taxSliderLabel = cell.detailLabel;
+            self.taxSlider = cell.slider;
+        } else if (indexPath.row == TEASlidersSectionTipRateRow) {
             cell.detailLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+            self.tipSliderLabel = cell.detailLabel;
+            self.tipSlider = cell.slider;
+        } else {
+            cell.detailLabel.text = [CalcUtil numberToString:sliderValue];
+            self.billSplitSliderLabel = cell.detailLabel;
+            self.billSplitSlider = cell.slider;
         }
         
         //add angle-down image
@@ -209,12 +226,6 @@ const int kTEAMAXPERSONS = 10;
         cell.accessoryView = imageView;
         
         cell.clipsToBounds = YES;
-
-        //setup slider
-        [self setupSlider:cell.slider withValue:sliderValue displayForRowAtIndexPath:indexPath];
-        
-        self.sliderLabel = cell.detailLabel;
-        self.trackingSlider = cell.slider;
         
         //expand cell
         if (self.selectedIndex == indexPath.row) {
@@ -292,13 +303,13 @@ const int kTEAMAXPERSONS = 10;
     
 }
 
-- (void)sliderValueChanged:(id)sender {
-    float sliderValue = self.trackingSlider.value;
+- (void)sliderValueChanged:(ASValueTrackingSlider *)sender {
+    float sliderValue = sender.value;
     if (self.selectedIndex == TEASlidersSectionBillSplitRow) {
         //increment 1 by 1
         sliderValue = floorf(sliderValue);
-        [self.trackingSlider setValue:sliderValue animated:NO];
-        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
+        [self.billSplitSlider setValue:sliderValue animated:NO];
+        self.billSplitSliderLabel.text = [CalcUtil numberToString:sliderValue];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     } else if (self.selectedIndex == TEASlidersSectionTaxRateRow) {
         //increment by 0.25
@@ -310,14 +321,14 @@ const int kTEAMAXPERSONS = 10;
         float decimalPartValue25 = floorf(decimalPartValue4) / 4;
             
         sliderValue = (intPartValue + decimalPartValue25) / 100.0;
-        [self.trackingSlider setValue:sliderValue animated:NO];
-        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
+        [self.taxSlider setValue:sliderValue animated:NO];
+        self.taxSliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue withFractionDigits:2];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }else {
         float sliderValue100 = sliderValue * 100.0;
         sliderValue = floorf(sliderValue100) / 100.0;
-        self.sliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
-        [self.trackingSlider setValue:sliderValue animated:NO];
+        [self.tipSlider setValue:sliderValue animated:NO];
+        self.tipSliderLabel.text = [CalcUtil numberToPercentStyle:sliderValue];
         [self.sliderAmountArray replaceObjectAtIndex:self.selectedIndex withObject:[CalcUtil numberToString:sliderValue]];
     }
     

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ASValueTrackingSlider.xcscheme</key>
+		<key>ASValueTrackingSlider.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BSKeyboardControls.xcscheme</key>
+		<key>BSKeyboardControls.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,20 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RFRateMe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2D2BE6B14C628C888CF056B7</key>
+		<key>0D8138A0EDD1D5F7E59E3D4C2A51B52C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70D9D99A178AF3C2AE67922E</key>
+		<key>816DCC803EC52048CC139F10235A974E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97F57939970A8615A421A9D8</key>
+		<key>A684181AD6CBB0150C5C75672B7C1938</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA722326956E7324C28B6B52372FD2AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

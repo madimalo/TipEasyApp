@@ -73,17 +73,18 @@ const int kTEAMAXPERSONS = 10;
     self.tableView.dataSource = self;
     
     self.selectedIndex = -1;
+    
+    self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
 
-    //setup data
     //reload saved data first
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"hasLaunchedOnce"]) {
-        self.sliderAmountArray = [[NSMutableArray alloc] initWithArray:[defaults objectForKey:@"sliderAmountArray"]];
+        self.sliderAmountArray = [[defaults objectForKey:@"sliderAmountArray"] mutableCopy];
     } else {
         [defaults setBool:YES forKey:@"hasLaunchedOnce"];
         [defaults synchronize];
-        self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
     }
+    [self saveData];
     
     self.sliderTitleArray = @[@"Tax Rate", @"Tip Percentage", @"Bill Splited By"];
     self.hintArray = @[@"Hint: set the total tax rate for this payment.", @"Hint: set the tip precentage you want to give.", @"Hint: set how many bills you want to split."];

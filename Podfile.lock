@@ -1,13 +1,16 @@
 PODS:
   - ASValueTrackingSlider (0.10.1)
   - BSKeyboardControls (2.2)
+  - RFRateMe (1.0.0)
 
 DEPENDENCIES:
   - ASValueTrackingSlider
   - BSKeyboardControls (~> 2.2)
+  - RFRateMe (~> 1.0.0)
 
 SPEC CHECKSUMS:
   ASValueTrackingSlider: 00fe601d9b5b2efeac515c1673afbf452f8e78ba
   BSKeyboardControls: b701935e789961102e3f20063bba7185800a2d3f
+  RFRateMe: 07fbc459799535254db3bd221e930817e8c8ffff
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.1

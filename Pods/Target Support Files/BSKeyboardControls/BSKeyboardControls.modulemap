@@ -1,6 +1,0 @@
-module BSKeyboardControls {
-  umbrella header "BSKeyboardControls-umbrella.h"
-
-  export *
-  module * { export * }
-}

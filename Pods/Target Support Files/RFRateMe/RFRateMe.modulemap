@@ -1,6 +1,0 @@
-module RFRateMe {
-  umbrella header "RFRateMe-umbrella.h"
-
-  export *
-  module * { export * }
-}

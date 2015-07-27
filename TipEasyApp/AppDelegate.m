@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TEATableViewController.h"
+#import "RFRateMe.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [RFRateMe showRateAlertAfterTimesOpened:3];
     return YES;
 }
 

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -17,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDR-r6-1PH">
-                        <rect key="frame" x="200" y="13" width="104" height="21"/>
+                        <rect key="frame" x="200" y="13" width="104" height="21.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="104" id="BVw-Ct-x5j"/>
                         </constraints>
@@ -35,7 +34,7 @@
                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-mi-gen" customClass="ASValueTrackingSlider">
                         <rect key="frame" x="16" y="73" width="288" height="31"/>
                     </slider>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-AD-QwL">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-AD-QwL">
                         <rect key="frame" x="0.0" y="108" width="320" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="hDq-jI-tDJ"/>
@@ -46,13 +45,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9IE-1a-krR" firstAttribute="firstBaseline" secondItem="NDR-r6-1PH" secondAttribute="firstBaseline" id="8a9-oM-Joj"/>
+                    <constraint firstItem="9IE-1a-krR" firstAttribute="centerY" secondItem="NDR-r6-1PH" secondAttribute="centerY" id="8a9-oM-Joj"/>
                     <constraint firstItem="XdM-mi-gen" firstAttribute="top" secondItem="9IE-1a-krR" secondAttribute="bottom" constant="39" id="EFn-tu-hTW"/>
                     <constraint firstAttribute="trailing" secondItem="XG6-AD-QwL" secondAttribute="trailing" id="Er6-yJ-Hil"/>
                     <constraint firstItem="9IE-1a-krR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="J4M-w6-XEi"/>
                     <constraint firstItem="9IE-1a-krR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Jhz-2k-yKc"/>
                     <constraint firstItem="XG6-AD-QwL" firstAttribute="centerX" secondItem="XdM-mi-gen" secondAttribute="centerX" id="MtN-Nw-IH6"/>
-                    <constraint firstItem="NDR-r6-1PH" firstAttribute="baseline" secondItem="9IE-1a-krR" secondAttribute="baseline" id="Nrt-gw-qo3"/>
+                    <constraint firstItem="NDR-r6-1PH" firstAttribute="centerY" secondItem="9IE-1a-krR" secondAttribute="centerY" id="Nrt-gw-qo3"/>
                     <constraint firstAttribute="trailingMargin" secondItem="NDR-r6-1PH" secondAttribute="trailing" constant="8" id="cKP-s7-biH"/>
                     <constraint firstItem="XG6-AD-QwL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gJb-U1-j2E"/>
                     <constraint firstItem="NDR-r6-1PH" firstAttribute="leading" secondItem="9IE-1a-krR" secondAttribute="trailing" id="mvN-vS-CmN"/>

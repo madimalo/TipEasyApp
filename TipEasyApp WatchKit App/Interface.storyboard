@@ -196,7 +196,7 @@
                         </group>
                         <group width="1" alignment="left" id="qY5-yf-kRl">
                             <items>
-                                <button width="1" alignment="left" title="Save" id="qM9-UE-qMi">
+                                <button width="1" alignment="left" title="OK" id="qM9-UE-qMi">
                                     <color key="backgroundColor" red="0.30980392159999998" green="0.52941176469999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <connections>
                                         <action selector="savePressed" destination="hqR-wF-kd3" id="kU9-BY-8jb"/>
@@ -215,7 +215,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="399" y="760"/>
+            <point key="canvasLocation" x="399" y="799.25"/>
         </scene>
         <!--Result-->
         <scene sceneID="WOF-SQ-gcB">

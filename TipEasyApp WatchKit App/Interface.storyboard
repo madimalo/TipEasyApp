@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bgB-6J-JBj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Calculate-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Calculate" title="Calculate" id="AgC-eL-Hgc" customClass="CalcInterfaceController">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="fbs-pP-7vm">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="0" textAlignment="right" id="NYd-nD-qCF"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="siZ-ag-uqQ">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="Clear" id="Q6U-qr-hTc">
+                                    <color key="backgroundColor" red="0.96397307981927716" green="0.40629706325301207" blue="0.1879000376506024" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="clearPressed" destination="AgC-eL-Hgc" id="9Ep-b0-324"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="right" title="Done" id="ALC-FI-5B6">
+                                    <color key="backgroundColor" red="0.30980392159999998" green="0.52941176469999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="donePressed" destination="AgC-eL-Hgc" id="3cd-yk-UOA"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="Og4-Rn-sO9">
+                            <items>
+                                <button width="0.25" height="1" alignment="center" title="1" id="4h8-Dz-XkI">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number1Pressed" destination="AgC-eL-Hgc" id="bCf-ec-sne"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="2" id="oUf-Ww-7vQ">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number2Pressed" destination="AgC-eL-Hgc" id="aeb-UF-Otc"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="3" id="VJB-f9-QLO">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number3Pressed" destination="AgC-eL-Hgc" id="Oga-ia-jF7"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="4" id="raP-I1-LNc">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number4Pressed" destination="AgC-eL-Hgc" id="BYC-L0-nKo"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="VB1-bV-5vD">
+                            <items>
+                                <button width="0.25" height="1" alignment="center" title="5" id="FLt-SR-DdS">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number5Pressed" destination="AgC-eL-Hgc" id="PZy-F6-h6H"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="6" id="hxH-4Z-vlk">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number6Pressed" destination="AgC-eL-Hgc" id="qep-2a-oRf"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="7" id="tvG-rN-iw1">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number7Pressed" destination="AgC-eL-Hgc" id="OTR-n1-AFD"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="8" id="JqM-jR-UU3">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number8Pressed" destination="AgC-eL-Hgc" id="peE-jg-nF4"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="Dbt-5F-qtb">
+                            <items>
+                                <button width="0.25" height="1" alignment="center" title="9" id="XOw-PL-xZf">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number9Pressed" destination="AgC-eL-Hgc" id="5AG-wB-iHE"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="0" id="cAR-Hg-kzN">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="number0Pressed" destination="AgC-eL-Hgc" id="GaC-Y9-2Vm"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="." id="GWM-Lq-iIw">
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="decimalPressed" destination="AgC-eL-Hgc" id="XMQ-tj-Tmo"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" title="⌫" id="RJg-Sd-2nW">
+                                    <color key="backgroundColor" red="0.99253263052208829" green="0.14885322540160636" blue="0.11581482178714854" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="deletePressed" destination="AgC-eL-Hgc" id="dnk-2G-XK9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="displayLabel" destination="NYd-nD-qCF" id="iR1-LK-Mph"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="203" y="533.00000100582838"/>
+        </scene>
+        <!--TipSmart-->
+        <scene sceneID="ByQ-ko-N4m">
+            <objects>
+                <controller title="TipSmart" id="bgB-6J-JBj" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="OSY-Io-Gjm">
+                            <items>
+                                <button width="1" alignment="left" verticalAlignment="center" title="Settings" id="Nqd-tQ-XfU">
+                                    <color key="backgroundColor" red="0.96397307980000002" green="0.40629706329999998" blue="0.18790003769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="SettingsPressed" destination="bgB-6J-JBj" id="cIL-w0-DL2"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" verticalAlignment="center" title="Calculte" id="uSc-oc-mff">
+                                    <color key="backgroundColor" red="0.30980392159999998" green="0.52941176469999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="CalculatePressed" destination="bgB-6J-JBj" id="mhw-eP-lTt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="203" y="760"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="TZR-rY-GES">
+            <objects>
+                <controller identifier="Settings" title="Settings" id="hqR-wF-kd3" customClass="SettingsInterfaceController">
+                    <items>
+                        <group width="1" height="60" alignment="left" layout="vertical" id="tfJ-72-r2d">
+                            <items>
+                                <label width="1" height="0.25" alignment="left" text="Tax Rate" id="FQT-X2-j5L">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="1" height="0.25" alignment="left" text="5%" textAlignment="center" id="2ZN-ts-LCi"/>
+                                <slider width="1" height="0.5" alignment="left" value="0.050000000000000003" maximum="0.14999999999999999" steps="60" id="qPW-8s-8Ua">
+                                    <connections>
+                                        <action selector="taxSliderValueDidChange:" destination="hqR-wF-kd3" id="sYz-31-v6p"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" height="60" alignment="left" layout="vertical" id="fdg-gx-fZl">
+                            <items>
+                                <label width="1" height="0.25" alignment="left" text="Tip Percentage" id="AZw-nZ-reZ">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="1" height="0.25" alignment="left" text="15%" textAlignment="center" id="yB0-ri-Ulm"/>
+                                <slider width="1" height="0.5" alignment="left" value="0.14999999999999999" maximum="0.29999999999999999" steps="30" id="nrW-K8-lI2">
+                                    <connections>
+                                        <action selector="tipSliderValueDidChange:" destination="hqR-wF-kd3" id="P26-Nz-zk9"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" height="60" alignment="left" layout="vertical" id="F1I-Yu-1ab">
+                            <items>
+                                <label width="1" height="0.25" alignment="left" text="Splited By" id="fJX-Qv-EL4">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label width="1" height="0.25" alignment="left" text="1" textAlignment="center" id="FuK-re-Epf"/>
+                                <slider width="1" height="0.5" alignment="left" value="1" minimum="1" maximum="10" steps="9" id="g9e-nG-l8s">
+                                    <connections>
+                                        <action selector="splitSliderValueDidChange:" destination="hqR-wF-kd3" id="UAc-zS-X7U"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="qY5-yf-kRl">
+                            <items>
+                                <button width="1" alignment="left" title="Save" id="qM9-UE-qMi">
+                                    <color key="backgroundColor" red="0.30980392159999998" green="0.52941176469999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="savePressed" destination="hqR-wF-kd3" id="kU9-BY-8jb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="billSplitLabel" destination="FuK-re-Epf" id="qNV-Mf-DPb"/>
+                        <outlet property="billSplitSlider" destination="g9e-nG-l8s" id="5O1-1M-H6x"/>
+                        <outlet property="taxSlider" destination="qPW-8s-8Ua" id="N9p-eN-I2O"/>
+                        <outlet property="taxSliderLabel" destination="2ZN-ts-LCi" id="V36-lJ-9GA"/>
+                        <outlet property="tipSlider" destination="nrW-K8-lI2" id="ceB-qm-nk4"/>
+                        <outlet property="tipSliderLabel" destination="yB0-ri-Ulm" id="HoM-Ek-fdH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="399" y="760"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="WOF-SQ-gcB">
+            <objects>
+                <controller identifier="Result" title="Result" id="13Q-J6-Hpj" customClass="ResultInterfaceController">
+                    <items>
+                        <table alignment="left" id="07Z-OV-fmt">
+                            <items>
+                                <tableRow identifier="ResultRow" id="fgU-a2-kQo" customClass="ResultRowController">
+                                    <group key="rootItem" width="1" height="1" alignment="left" layout="vertical" id="gP4-V3-Bnn">
+                                        <items>
+                                            <label width="1" height="0.11" alignment="left" text="Bill Total" id="TaQ-Id-r8e">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label width="1" height="0.089999999999999997" alignment="right" text="$100.00" textAlignment="right" id="RWv-2V-Lee">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="1" height="0.11" alignment="left" text="Tax Included" id="ulQ-po-5CT">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label width="1" height="0.089999999999999997" alignment="right" text="$100.00" textAlignment="right" id="4hi-Rv-wkK">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="1" height="0.11" alignment="left" text="Tip to Pay" id="I33-j6-tbn">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label width="1" height="0.089999999999999997" alignment="right" text="$100.00" textAlignment="right" id="mWN-3N-Ul7">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="1" height="0.11" alignment="left" text="Total to Pay" id="9Uu-ev-HNy">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label width="1" height="0.089999999999999997" alignment="right" text="$100.00" textAlignment="right" id="G6T-EK-b9f">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="1" height="0.11" alignment="left" text="Each to Pay" id="NmY-Oa-Jzm">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                            <label width="1" height="0.089999999999999997" alignment="right" text="$100.00" textAlignment="right" id="yTx-Vc-DBk">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="billTotalLabel" destination="RWv-2V-Lee" id="Fik-5t-Z1H"/>
+                                        <outlet property="eachPayLabel" destination="yTx-Vc-DBk" id="xLN-f6-p5g"/>
+                                        <outlet property="taxLabel" destination="4hi-Rv-wkK" id="hoX-9O-opx"/>
+                                        <outlet property="tipLabel" destination="mWN-3N-Ul7" id="n90-lu-dlh"/>
+                                        <outlet property="totalPayLabel" destination="G6T-EK-b9f" id="yIg-RH-DfA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="resultTable" destination="07Z-OV-fmt" id="Vdw-N9-tjx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="399" y="533"/>
+        </scene>
+    </scenes>
+</document>

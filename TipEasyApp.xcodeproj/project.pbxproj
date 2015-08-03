@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292543201B6C25BC008D981B /* CalcInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2925431F1B6C25BC008D981B /* CalcInterfaceController.m */; };
+		292543221B6C25BC008D981B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292543211B6C25BC008D981B /* Images.xcassets */; };
+		292543261B6C25BC008D981B /* TipEasyApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */; };
+		292543301B6C25BD008D981B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2925432F1B6C25BD008D981B /* Images.xcassets */; };
+		292543331B6C25BD008D981B /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		292C27961B51037800C36DE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292C27951B51037800C36DE0 /* LaunchScreen.xib */; };
 		292C27981B51AB1F00C36DE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292C27971B51AB1F00C36DE0 /* Images.xcassets */; };
 		292C279A1B51E2EF00C36DE0 /* Icon_v4 in Resources */ = {isa = PBXBuildFile; fileRef = 292C27991B51E2EF00C36DE0 /* Icon_v4 */; };
+		2930E4D61B6EC8C80042F5B1 /* CalcUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930E4D51B6EC8C80042F5B1 /* CalcUtil.m */; };
+		2930E4D81B6EC9690042F5B1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2930E4D71B6EC9690042F5B1 /* Interface.storyboard */; };
+		2930E4DB1B6ED1590042F5B1 /* ResultRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930E4DA1B6ED1590042F5B1 /* ResultRowController.m */; };
+		2930E4DE1B6EE3BE0042F5B1 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930E4DD1B6EE3BE0042F5B1 /* InterfaceController.m */; };
+		2930E4E11B6EE3D30042F5B1 /* SettingsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930E4E01B6EE3D30042F5B1 /* SettingsInterfaceController.m */; };
+		293356501B6D4B2000C58B60 /* ResultInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2933564F1B6D4B2000C58B60 /* ResultInterfaceController.m */; };
+		293994E61B6EA452008E2AD2 /* CalcResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 293994E51B6EA452008E2AD2 /* CalcResult.m */; };
 		29988FB11B4C721E0045EA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FB01B4C721E0045EA73 /* main.m */; };
 		29988FB41B4C721E0045EA73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FB31B4C721E0045EA73 /* AppDelegate.m */; };
 		29988FBA1B4C721E0045EA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29988FB81B4C721E0045EA73 /* Main.storyboard */; };
@@ -32,6 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		292543271B6C25BC008D981B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292543241B6C25BC008D981B;
+			remoteInfo = "TipEasyApp WatchKit App";
+		};
+		292543311B6C25BD008D981B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292543191B6C25BC008D981B;
+			remoteInfo = "TipEasyApp WatchKit Extension";
+		};
 		29988FC51B4C721E0045EA73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
@@ -41,13 +67,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2925433A1B6C25BD008D981B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				292543331B6C25BD008D981B /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		03673E8E64A566F991BA35C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1249B4CD13CE1F98F4099283 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		291E37301B54A016002A94BD /* TipEasyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TipEasyApp.entitlements; sourceTree = "<group>"; };
+		2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TipEasyApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2925431D1B6C25BC008D981B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2925431E1B6C25BC008D981B /* CalcInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcInterfaceController.h; sourceTree = "<group>"; };
+		2925431F1B6C25BC008D981B /* CalcInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcInterfaceController.m; sourceTree = "<group>"; };
+		292543211B6C25BC008D981B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TipEasyApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2925432B1B6C25BC008D981B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2925432F1B6C25BD008D981B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		292C27951B51037800C36DE0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		292C27971B51AB1F00C36DE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		292C27991B51E2EF00C36DE0 /* Icon_v4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon_v4; sourceTree = "<group>"; };
+		2930E4D41B6EC8C80042F5B1 /* CalcUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcUtil.h; sourceTree = "<group>"; };
+		2930E4D51B6EC8C80042F5B1 /* CalcUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcUtil.m; sourceTree = "<group>"; };
+		2930E4D71B6EC9690042F5B1 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		2930E4D91B6ED1590042F5B1 /* ResultRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultRowController.h; sourceTree = "<group>"; };
+		2930E4DA1B6ED1590042F5B1 /* ResultRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultRowController.m; sourceTree = "<group>"; };
+		2930E4DC1B6EE3BE0042F5B1 /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		2930E4DD1B6EE3BE0042F5B1 /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		2930E4DF1B6EE3D30042F5B1 /* SettingsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsInterfaceController.h; sourceTree = "<group>"; };
+		2930E4E01B6EE3D30042F5B1 /* SettingsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsInterfaceController.m; sourceTree = "<group>"; };
+		2933564E1B6D4B2000C58B60 /* ResultInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultInterfaceController.h; sourceTree = "<group>"; };
+		2933564F1B6D4B2000C58B60 /* ResultInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultInterfaceController.m; sourceTree = "<group>"; };
+		293994E41B6EA452008E2AD2 /* CalcResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcResult.h; sourceTree = "<group>"; };
+		293994E51B6EA452008E2AD2 /* CalcResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcResult.m; sourceTree = "<group>"; };
+		294708741B6F25BA0032AE95 /* TipEasyApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TipEasyApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		29988FAB1B4C721E0045EA73 /* TipEasyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipEasyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29988FAF1B4C721E0045EA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29988FB01B4C721E0045EA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +147,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		292543171B6C25BC008D981B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29988FA81B4C721E0045EA73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,12 +172,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2925431B1B6C25BC008D981B /* TipEasyApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				294708741B6F25BA0032AE95 /* TipEasyApp WatchKit Extension.entitlements */,
+				2930E4DC1B6EE3BE0042F5B1 /* InterfaceController.h */,
+				2930E4DD1B6EE3BE0042F5B1 /* InterfaceController.m */,
+				2930E4DF1B6EE3D30042F5B1 /* SettingsInterfaceController.h */,
+				2930E4E01B6EE3D30042F5B1 /* SettingsInterfaceController.m */,
+				2925431E1B6C25BC008D981B /* CalcInterfaceController.h */,
+				2925431F1B6C25BC008D981B /* CalcInterfaceController.m */,
+				2933564E1B6D4B2000C58B60 /* ResultInterfaceController.h */,
+				2933564F1B6D4B2000C58B60 /* ResultInterfaceController.m */,
+				2930E4D91B6ED1590042F5B1 /* ResultRowController.h */,
+				2930E4DA1B6ED1590042F5B1 /* ResultRowController.m */,
+				292543211B6C25BC008D981B /* Images.xcassets */,
+				2925431C1B6C25BC008D981B /* Supporting Files */,
+				293994E41B6EA452008E2AD2 /* CalcResult.h */,
+				293994E51B6EA452008E2AD2 /* CalcResult.m */,
+				2930E4D41B6EC8C80042F5B1 /* CalcUtil.h */,
+				2930E4D51B6EC8C80042F5B1 /* CalcUtil.m */,
+			);
+			path = "TipEasyApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2925431C1B6C25BC008D981B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2925431D1B6C25BC008D981B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		292543291B6C25BC008D981B /* TipEasyApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2930E4D71B6EC9690042F5B1 /* Interface.storyboard */,
+				2925432F1B6C25BD008D981B /* Images.xcassets */,
+				2925432A1B6C25BC008D981B /* Supporting Files */,
+			);
+			path = "TipEasyApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		2925432A1B6C25BC008D981B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2925432B1B6C25BC008D981B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		29988FA21B4C721E0045EA73 = {
 			isa = PBXGroup;
 			children = (
 				292C27971B51AB1F00C36DE0 /* Images.xcassets */,
 				292C27951B51037800C36DE0 /* LaunchScreen.xib */,
 				29988FC71B4C721E0045EA73 /* TipEasyAppTests */,
+				2925431B1B6C25BC008D981B /* TipEasyApp WatchKit Extension */,
+				292543291B6C25BC008D981B /* TipEasyApp WatchKit App */,
 				29988FAC1B4C721E0045EA73 /* Products */,
 				29988FAD1B4C721E0045EA73 /* TipEasyApp */,
 				FE90C32C5949C5BD1AEF3221 /* Pods */,
@@ -121,6 +242,8 @@
 			children = (
 				29988FAB1B4C721E0045EA73 /* TipEasyApp.app */,
 				29988FC41B4C721E0045EA73 /* TipEasyAppTests.xctest */,
+				2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */,
+				292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +372,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		292543191B6C25BC008D981B /* TipEasyApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292543391B6C25BD008D981B /* Build configuration list for PBXNativeTarget "TipEasyApp WatchKit Extension" */;
+			buildPhases = (
+				292543161B6C25BC008D981B /* Sources */,
+				292543171B6C25BC008D981B /* Frameworks */,
+				292543181B6C25BC008D981B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292543281B6C25BC008D981B /* PBXTargetDependency */,
+			);
+			name = "TipEasyApp WatchKit Extension";
+			productName = "TipEasyApp WatchKit Extension";
+			productReference = 2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		292543241B6C25BC008D981B /* TipEasyApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292543381B6C25BD008D981B /* Build configuration list for PBXNativeTarget "TipEasyApp WatchKit App" */;
+			buildPhases = (
+				292543231B6C25BC008D981B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TipEasyApp WatchKit App";
+			productName = "TipEasyApp WatchKit App";
+			productReference = 292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		29988FAA1B4C721E0045EA73 /* TipEasyApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29988FCE1B4C721E0045EA73 /* Build configuration list for PBXNativeTarget "TipEasyApp" */;
@@ -258,10 +414,12 @@
 				29988FA81B4C721E0045EA73 /* Frameworks */,
 				29988FA91B4C721E0045EA73 /* Resources */,
 				C25A48F3DDDA7753773E4545 /* Copy Pods Resources */,
+				2925433A1B6C25BD008D981B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				292543321B6C25BD008D981B /* PBXTargetDependency */,
 			);
 			name = TipEasyApp;
 			productName = TipEasyApp;
@@ -295,10 +453,25 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Leon Qi";
 				TargetAttributes = {
+					292543191B6C25BC008D981B = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 83QDYHKJ32;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					292543241B6C25BC008D981B = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					29988FAA1B4C721E0045EA73 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 83QDYHKJ32;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
@@ -328,11 +501,31 @@
 			targets = (
 				29988FAA1B4C721E0045EA73 /* TipEasyApp */,
 				29988FC31B4C721E0045EA73 /* TipEasyAppTests */,
+				292543191B6C25BC008D981B /* TipEasyApp WatchKit Extension */,
+				292543241B6C25BC008D981B /* TipEasyApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		292543181B6C25BC008D981B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292543261B6C25BC008D981B /* TipEasyApp WatchKit App.app in Resources */,
+				292543221B6C25BC008D981B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292543231B6C25BC008D981B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292543301B6C25BD008D981B /* Images.xcassets in Resources */,
+				2930E4D81B6EC9690042F5B1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29988FA91B4C721E0045EA73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +584,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		292543161B6C25BC008D981B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2930E4DB1B6ED1590042F5B1 /* ResultRowController.m in Sources */,
+				2930E4DE1B6EE3BE0042F5B1 /* InterfaceController.m in Sources */,
+				2930E4E11B6EE3D30042F5B1 /* SettingsInterfaceController.m in Sources */,
+				293356501B6D4B2000C58B60 /* ResultInterfaceController.m in Sources */,
+				293994E61B6EA452008E2AD2 /* CalcResult.m in Sources */,
+				2930E4D61B6EC8C80042F5B1 /* CalcUtil.m in Sources */,
+				292543201B6C25BC008D981B /* CalcInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29988FA71B4C721E0045EA73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +628,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		292543281B6C25BC008D981B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292543241B6C25BC008D981B /* TipEasyApp WatchKit App */;
+			targetProxy = 292543271B6C25BC008D981B /* PBXContainerItemProxy */;
+		};
+		292543321B6C25BD008D981B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292543191B6C25BC008D981B /* TipEasyApp WatchKit Extension */;
+			targetProxy = 292543311B6C25BD008D981B /* PBXContainerItemProxy */;
+		};
 		29988FC61B4C721E0045EA73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29988FAA1B4C721E0045EA73 /* TipEasyApp */;
@@ -440,6 +657,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		292543341B6C25BD008D981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TipEasyApp WatchKit Extension/TipEasyApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TipEasyApp WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		292543351B6C25BD008D981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TipEasyApp WatchKit Extension/TipEasyApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "TipEasyApp WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		292543361B6C25BD008D981B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TipEasyApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TipEasyApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		292543371B6C25BD008D981B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TipEasyApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TipEasyApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		29988FCC1B4C721E0045EA73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -476,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -514,7 +797,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,6 +811,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TipEasyApp/TipEasyApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipEasyApp/Info.plist;
@@ -544,6 +828,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TipEasyApp/TipEasyApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipEasyApp/Info.plist;
@@ -591,6 +876,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		292543381B6C25BD008D981B /* Build configuration list for PBXNativeTarget "TipEasyApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292543361B6C25BD008D981B /* Debug */,
+				292543371B6C25BD008D981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292543391B6C25BD008D981B /* Build configuration list for PBXNativeTarget "TipEasyApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292543341B6C25BD008D981B /* Debug */,
+				292543351B6C25BD008D981B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29988FA61B4C721E0045EA73 /* Build configuration list for PBXProject "TipEasyApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

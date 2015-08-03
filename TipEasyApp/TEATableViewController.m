@@ -77,7 +77,11 @@ const int kTEAMAXPERSONS = 10;
     self.sliderAmountArray = [@[@"0.05", @"0.15", @"1"] mutableCopy];
 
     //reload saved data first
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //Now supports Apple Watch
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]
+                                initWithSuiteName:@"group.com.madimalo.TipEasyApp.watch.defaults"];
     if ([defaults objectForKey:@"hasLaunchedOnce"]) {
         self.sliderAmountArray = [[defaults objectForKey:@"sliderAmountArray"] mutableCopy];
     } else {
@@ -580,7 +584,9 @@ const int kTEAMAXPERSONS = 10;
 #pragma mark Handle data
 
 - (void)saveData {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc]
+                                initWithSuiteName:@"group.com.madimalo.TipEasyApp.watch.defaults"];
     [defaults setObject:self.sliderAmountArray forKey:@"sliderAmountArray"];
     [defaults synchronize];
 }

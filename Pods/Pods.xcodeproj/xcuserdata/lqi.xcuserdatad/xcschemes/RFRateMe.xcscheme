@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D99BCD2ADC26B5FF78B544E0"
+               BlueprintIdentifier = "A27033E816C417C49AE42A33"
                BuildableName = "libRFRateMe.a"
                BlueprintName = "RFRateMe"
                ReferencedContainer = "container:Pods.xcodeproj">

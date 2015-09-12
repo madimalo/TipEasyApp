@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		292543201B6C25BC008D981B /* CalcInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2925431F1B6C25BC008D981B /* CalcInterfaceController.m */; };
 		292543221B6C25BC008D981B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292543211B6C25BC008D981B /* Images.xcassets */; };
-		292543261B6C25BC008D981B /* TipEasyApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */; };
 		292543301B6C25BD008D981B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2925432F1B6C25BD008D981B /* Images.xcassets */; };
-		292543331B6C25BD008D981B /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		292C27961B51037800C36DE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 292C27951B51037800C36DE0 /* LaunchScreen.xib */; };
 		292C27981B51AB1F00C36DE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292C27971B51AB1F00C36DE0 /* Images.xcassets */; };
 		292C279A1B51E2EF00C36DE0 /* Icon_v4 in Resources */ = {isa = PBXBuildFile; fileRef = 292C27991B51E2EF00C36DE0 /* Icon_v4 */; };
@@ -33,6 +31,8 @@
 		29988FE71B4CB1420045EA73 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FE51B4CB1420045EA73 /* ResultCell.xib */; };
 		29988FEB1B4CB22A0045EA73 /* InputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29988FE91B4CB22A0045EA73 /* InputCell.m */; };
 		29988FEC1B4CB22A0045EA73 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29988FEA1B4CB22A0045EA73 /* InputCell.xib */; };
+		29BA051D1BA3C11C0015F179 /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29BA05201BA3C11C0015F179 /* TipEasyApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */; };
 		29D196DA1B55D72300F1790E /* InputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D196D91B55D72300F1790E /* InputTextField.m */; };
 		29D455861B4DE8AA00D10163 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D4557F1B4DE8AA00D10163 /* FAImageView.m */; };
 		29D455871B4DE8AA00D10163 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D455811B4DE8AA00D10163 /* NSString+FontAwesome.m */; };
@@ -44,20 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		292543271B6C25BC008D981B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 292543241B6C25BC008D981B;
-			remoteInfo = "TipEasyApp WatchKit App";
-		};
-		292543311B6C25BD008D981B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 292543191B6C25BC008D981B;
-			remoteInfo = "TipEasyApp WatchKit Extension";
-		};
 		29988FC51B4C721E0045EA73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
@@ -65,18 +51,43 @@
 			remoteGlobalIDString = 29988FAA1B4C721E0045EA73;
 			remoteInfo = TipEasyApp;
 		};
+		29BA051B1BA3C11C0015F179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292543191B6C25BC008D981B;
+			remoteInfo = "TipEasyApp WatchKit Extension";
+		};
+		29BA051E1BA3C11C0015F179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29988FA31B4C721E0045EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292543241B6C25BC008D981B;
+			remoteInfo = "TipEasyApp WatchKit App";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2925433A1B6C25BD008D981B /* Embed App Extensions */ = {
+		29BA05211BA3C11C0015F179 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				292543331B6C25BD008D981B /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */,
+				29BA051D1BA3C11C0015F179 /* TipEasyApp WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BA05221BA3C11C0015F179 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				29BA05201BA3C11C0015F179 /* TipEasyApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -383,27 +394,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				292543281B6C25BC008D981B /* PBXTargetDependency */,
 			);
 			name = "TipEasyApp WatchKit Extension";
 			productName = "TipEasyApp WatchKit Extension";
 			productReference = 2925431A1B6C25BC008D981B /* TipEasyApp WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		292543241B6C25BC008D981B /* TipEasyApp WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292543381B6C25BD008D981B /* Build configuration list for PBXNativeTarget "TipEasyApp WatchKit App" */;
 			buildPhases = (
 				292543231B6C25BC008D981B /* Resources */,
+				29BA05211BA3C11C0015F179 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				29BA051C1BA3C11C0015F179 /* PBXTargetDependency */,
 			);
 			name = "TipEasyApp WatchKit App";
 			productName = "TipEasyApp WatchKit App";
 			productReference = 292543251B6C25BC008D981B /* TipEasyApp WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 		29988FAA1B4C721E0045EA73 /* TipEasyApp */ = {
 			isa = PBXNativeTarget;
@@ -414,12 +426,12 @@
 				29988FA81B4C721E0045EA73 /* Frameworks */,
 				29988FA91B4C721E0045EA73 /* Resources */,
 				C25A48F3DDDA7753773E4545 /* Copy Pods Resources */,
-				2925433A1B6C25BD008D981B /* Embed App Extensions */,
+				29BA05221BA3C11C0015F179 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				292543321B6C25BD008D981B /* PBXTargetDependency */,
+				29BA051F1BA3C11C0015F179 /* PBXTargetDependency */,
 			);
 			name = TipEasyApp;
 			productName = TipEasyApp;
@@ -450,7 +462,7 @@
 		29988FA31B4C721E0045EA73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Leon Qi";
 				TargetAttributes = {
 					292543191B6C25BC008D981B = {
@@ -516,7 +528,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292543261B6C25BC008D981B /* TipEasyApp WatchKit App.app in Resources */,
 				292543221B6C25BC008D981B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,20 +643,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		292543281B6C25BC008D981B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 292543241B6C25BC008D981B /* TipEasyApp WatchKit App */;
-			targetProxy = 292543271B6C25BC008D981B /* PBXContainerItemProxy */;
-		};
-		292543321B6C25BD008D981B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 292543191B6C25BC008D981B /* TipEasyApp WatchKit Extension */;
-			targetProxy = 292543311B6C25BD008D981B /* PBXContainerItemProxy */;
-		};
 		29988FC61B4C721E0045EA73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29988FAA1B4C721E0045EA73 /* TipEasyApp */;
 			targetProxy = 29988FC51B4C721E0045EA73 /* PBXContainerItemProxy */;
+		};
+		29BA051C1BA3C11C0015F179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292543191B6C25BC008D981B /* TipEasyApp WatchKit Extension */;
+			targetProxy = 29BA051B1BA3C11C0015F179 /* PBXContainerItemProxy */;
+		};
+		29BA051F1BA3C11C0015F179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292543241B6C25BC008D981B /* TipEasyApp WatchKit App */;
+			targetProxy = 29BA051E1BA3C11C0015F179 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,9 +685,13 @@
 				INFOPLIST_FILE = "TipEasyApp WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madimalo.TipEasyApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -689,9 +704,13 @@
 				INFOPLIST_FILE = "TipEasyApp WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.madimalo.TipEasyApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -706,11 +725,12 @@
 				);
 				IBSC_MODULE = TipEasyApp_WatchKit_Extension;
 				INFOPLIST_FILE = "TipEasyApp WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madimalo.TipEasyApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -721,11 +741,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				IBSC_MODULE = TipEasyApp_WatchKit_Extension;
 				INFOPLIST_FILE = "TipEasyApp WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madimalo.TipEasyApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -750,6 +771,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -823,6 +845,7 @@
 				INFOPLIST_FILE = TipEasyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madimalo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -840,6 +863,7 @@
 				INFOPLIST_FILE = TipEasyApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madimalo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -849,16 +873,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TipEasyAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madimalo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEasyApp.app/TipEasyApp";
 			};
@@ -868,12 +890,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TipEasyAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madimalo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipEasyApp.app/TipEasyApp";
 			};

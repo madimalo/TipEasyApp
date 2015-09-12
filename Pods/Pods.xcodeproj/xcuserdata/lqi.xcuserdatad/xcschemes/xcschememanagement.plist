@@ -8,44 +8,36 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>BSKeyboardControls.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>RFRateMe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6E7257C21C983CCBBE1E2A4E19C4DA6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6FACF6B380F303130131368245209A62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9604E14795C152493A8D67FD980F3FCA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9AB4C595F4FEBDC7D051125C40870773</key>
+		<key>6FB2EFC86F6161B0A812A28FAF099B41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

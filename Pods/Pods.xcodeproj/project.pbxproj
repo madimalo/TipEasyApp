@@ -7,95 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F8640E5CAB2D4A9408ECC888C3B34E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
 		0FBD30DA6FDAB558E98EB9D6A8C27AA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
-		1D65298A4172EC828E9342CE679A32DF /* BSKeyboardControls-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED341BAC8BBD9B47D3C94FD941FE9854 /* BSKeyboardControls-dummy.m */; };
-		1EBF91B14ADF0B4B828D44D29EE12B9C /* ASValueTrackingSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = A997150A0EC89BBF7052B61CA391FDDB /* ASValueTrackingSlider.h */; };
 		2B8643760D2E012271594A8EED198E84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
-		35C492BEB77CC66DC4C924D883848624 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E34D7166F69BA2587825D061CB0EBA /* ASValueTrackingSlider.m */; };
+		3A29B8B7BF2925EFE47046A8C6F60F51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
+		3B4CAA3897CE8B263A6E031937A16928 /* BSKeyboardControls-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A66A07B98F2211A15D7BC69A40D341D /* BSKeyboardControls-dummy.m */; };
 		3FE41472E33C4D69A2DEFE6104E706B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F98554CA9751F7EFB31193B37107EB /* UIKit.framework */; };
-		455E9CB7E6C1EDDEA9AB8F97771A0189 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BCB700D1707115F9A4FE1B7E60399D /* ASValuePopUpView.m */; };
 		46BBB749F705EBBEF51BBF467B186645 /* UIAlertView+NSCookbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C041BBD7B7246AA786017207563616 /* UIAlertView+NSCookbook.h */; };
-		8B2008580251D17EB619888EFEE14908 /* BSKeyboardControls.h in Headers */ = {isa = PBXBuildFile; fileRef = FF6F92FFB6D084CADC361084D69B7CCE /* BSKeyboardControls.h */; };
-		A03E1AE7F4EBBBC458309E2A74610964 /* ASValuePopUpView.h in Headers */ = {isa = PBXBuildFile; fileRef = F460F2460CBE24B296BC4A504E2BA212 /* ASValuePopUpView.h */; };
+		5B816609EF6E09729880B2121E72A29A /* BSKeyboardControls.h in Headers */ = {isa = PBXBuildFile; fileRef = F49F9610F12F4AC54A170F64A566EF53 /* BSKeyboardControls.h */; };
+		8D83311D741FCF5D8051ABFE6FA25FBD /* ASValueTrackingSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F6C7059D16DC661A7D02F88DB0A3A4 /* ASValueTrackingSlider-dummy.m */; };
+		A35CF4CDFE526C8E2E409B35EE8B43EE /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D218FAC8F8AC52EFDBF13B5A674B4352 /* ASValueTrackingSlider.m */; };
+		A7EF0B06CB69A1A02E9C22F329428EBB /* BSKeyboardControls.m in Sources */ = {isa = PBXBuildFile; fileRef = F68E5D50FAE2B6341CA0575D0008CF6C /* BSKeyboardControls.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A851E0B2AB6B6FB1BB09EDF8660E3FF4 /* ASValuePopUpView.h in Headers */ = {isa = PBXBuildFile; fileRef = D8057FA6032B65C690DDB0962034B288 /* ASValuePopUpView.h */; };
 		B54ACFA75A1D4725D0CE88B5862F2E21 /* RFRateMe.h in Headers */ = {isa = PBXBuildFile; fileRef = 101215A3FAF0DC744C0425BEA0A8CEB4 /* RFRateMe.h */; };
 		B6C91D2FD334B2888236425D90E936D5 /* RFRateMe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CB76A6FC1DAB6F5EA9101D41461C7 /* RFRateMe-dummy.m */; };
 		BE68AE9E816773DA8E54657610F8602B /* RFRateMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C7390A629B2D730A46780EBFA6572 /* RFRateMe.m */; };
-		CEBF41BA5D9C82C6063580FF13997521 /* BSKeyboardControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E6332087A842D79B309BB348C876C0 /* BSKeyboardControls.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DD82F97E954325BC096EF427C3F05405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
+		DE654B8F4B02179CE9B79A1C70504B5D /* ASValueTrackingSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9D39812F172332E1E69985A5B4322A /* ASValueTrackingSlider.h */; };
 		E111E89C0EE65A93BE879DD459806A9C /* UIAlertView+NSCookbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 886F0154D9E29D04B36F1DA1EA9924E8 /* UIAlertView+NSCookbook.m */; };
+		E50CB5DA9FB30EE7618ED6263929CD1E /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 783DA6E3D922FE30F272A6CAC8A33E78 /* ASValuePopUpView.m */; };
+		ED754559EC8F1CB205EC488AC97F63E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B874768F192DD4491299466C3EBEF04C /* Foundation.framework */; };
 		F22D9553BACD98790E442A040AFD67F0 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E10FE9885A193E137F5EAC08E6E937F /* Pods-dummy.m */; };
-		FDEC942C230BA2549C022A033BC2765D /* ASValueTrackingSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD695C7556EF9FFB83CE76FBEB794733 /* ASValueTrackingSlider-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		78635B17FD08153252D4461D4CA08EDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AB4C595F4FEBDC7D051125C40870773;
-			remoteInfo = BSKeyboardControls;
-		};
-		E226E58076B1230E592F333EE5455B15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9604E14795C152493A8D67FD980F3FCA;
-			remoteInfo = ASValueTrackingSlider;
-		};
-		F4BDC3229C18415921DA24A00057C9F5 /* PBXContainerItemProxy */ = {
+		AA026682D710BB35D1B97900073EC933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FACF6B380F303130131368245209A62;
 			remoteInfo = RFRateMe;
 		};
+		B1604D403266CCBA8395AA7F036C9ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7257C21C983CCBBE1E2A4E19C4DA6C;
+			remoteInfo = BSKeyboardControls;
+		};
+		CD70788CC870352EF764DA62A005F2FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FB2EFC86F6161B0A812A28FAF099B41;
+			remoteInfo = ASValueTrackingSlider;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02E34D7166F69BA2587825D061CB0EBA /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASValueTrackingSlider.m; path = ASValueTrackingSlider/ASValueTrackingSlider.m; sourceTree = "<group>"; };
 		0EB27CD2DB8867168924C10025FBE584 /* ASValueTrackingSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASValueTrackingSlider.xcconfig; sourceTree = "<group>"; };
 		101215A3FAF0DC744C0425BEA0A8CEB4 /* RFRateMe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RFRateMe.h; path = RFRateMe/RFRateMe.h; sourceTree = "<group>"; };
 		10520852282BA492CD5B67D2AFB2C5FF /* libRFRateMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRFRateMe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A66A07B98F2211A15D7BC69A40D341D /* BSKeyboardControls-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSKeyboardControls-dummy.m"; sourceTree = "<group>"; };
 		21C041BBD7B7246AA786017207563616 /* UIAlertView+NSCookbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+NSCookbook.h"; path = "RFRateMe/UIAlertView+NSCookbook.h"; sourceTree = "<group>"; };
-		23F9785314FAD5F163605852A8DD5471 /* libASValueTrackingSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASValueTrackingSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E10FE9885A193E137F5EAC08E6E937F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		414539FD858512D95A86FEC6323B79EF /* RFRateMe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RFRateMe.xcconfig; sourceTree = "<group>"; };
-		472063BBFCBC56DE4D15FFB24799FE8F /* ASValueTrackingSlider-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ASValueTrackingSlider-Private.xcconfig"; sourceTree = "<group>"; };
-		4CB32D4AFDF3EAF833F40706B5243622 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		42B88E6DE07547C8253EBC5373220237 /* libASValueTrackingSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASValueTrackingSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F6C7059D16DC661A7D02F88DB0A3A4 /* ASValueTrackingSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASValueTrackingSlider-dummy.m"; sourceTree = "<group>"; };
 		5A0F41A2B2742BB7EC3FC2AE0BC841CD /* BSKeyboardControls.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSKeyboardControls.xcconfig; sourceTree = "<group>"; };
 		5F37964BC2B30193C929A5F13323B530 /* BSKeyboardControls-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSKeyboardControls-prefix.pch"; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		69F98554CA9751F7EFB31193B37107EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		72E6332087A842D79B309BB348C876C0 /* BSKeyboardControls.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSKeyboardControls.m; path = BSKeyboardControls/BSKeyboardControls.m; sourceTree = "<group>"; };
+		6A9D39812F172332E1E69985A5B4322A /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASValueTrackingSlider.h; path = ASValueTrackingSlider/ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		6D702E6E6ABFD02CD5DF828FA89A5769 /* RFRateMe-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RFRateMe-Private.xcconfig"; sourceTree = "<group>"; };
+		783DA6E3D922FE30F272A6CAC8A33E78 /* ASValuePopUpView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASValuePopUpView.m; path = ASValueTrackingSlider/ASValuePopUpView.m; sourceTree = "<group>"; };
+		7D318CDF428E63910E270C3C22623EF5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		819F915F49A036EEC25A8C6A1EE226ED /* RFRateMe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RFRateMe-prefix.pch"; sourceTree = "<group>"; };
-		869414EA2AA080988F615A8DA8FC1FAC /* RFRateMe-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RFRateMe-Private.xcconfig"; sourceTree = "<group>"; };
 		886F0154D9E29D04B36F1DA1EA9924E8 /* UIAlertView+NSCookbook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+NSCookbook.m"; path = "RFRateMe/UIAlertView+NSCookbook.m"; sourceTree = "<group>"; };
 		940C7390A629B2D730A46780EBFA6572 /* RFRateMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RFRateMe.m; path = RFRateMe/RFRateMe.m; sourceTree = "<group>"; };
-		96AB200F7D2AC641620EFDE396557909 /* BSKeyboardControls-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BSKeyboardControls-Private.xcconfig"; sourceTree = "<group>"; };
-		A997150A0EC89BBF7052B61CA391FDDB /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASValueTrackingSlider.h; path = ASValueTrackingSlider/ASValueTrackingSlider.h; sourceTree = "<group>"; };
 		AAE8493E1CF45D57B00D10D0AC4C1DA8 /* ASValueTrackingSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASValueTrackingSlider-prefix.pch"; sourceTree = "<group>"; };
-		B5BCB700D1707115F9A4FE1B7E60399D /* ASValuePopUpView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASValuePopUpView.m; path = ASValueTrackingSlider/ASValuePopUpView.m; sourceTree = "<group>"; };
 		B874768F192DD4491299466C3EBEF04C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB9090CF1E1B4AB4569853E619C2F3A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD695C7556EF9FFB83CE76FBEB794733 /* ASValueTrackingSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASValueTrackingSlider-dummy.m"; sourceTree = "<group>"; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5173B90095E2C032D6A665E97481D07 /* libBSKeyboardControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBSKeyboardControls.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7BC5479E683E25DE4DA395EC5717534 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		C46A796C2BB2B5A496D6CE9A4ECE81DD /* libBSKeyboardControls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBSKeyboardControls.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D218FAC8F8AC52EFDBF13B5A674B4352 /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASValueTrackingSlider.m; path = ASValueTrackingSlider/ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		D8057FA6032B65C690DDB0962034B288 /* ASValuePopUpView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASValuePopUpView.h; path = ASValueTrackingSlider/ASValuePopUpView.h; sourceTree = "<group>"; };
+		DC39D6A1042D1E4AD16084FC597978B9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E68B95CF5441D89BD9615B359E80D35A /* BSKeyboardControls-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BSKeyboardControls-Private.xcconfig"; sourceTree = "<group>"; };
 		EC5CB76A6FC1DAB6F5EA9101D41461C7 /* RFRateMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RFRateMe-dummy.m"; sourceTree = "<group>"; };
-		ED341BAC8BBD9B47D3C94FD941FE9854 /* BSKeyboardControls-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSKeyboardControls-dummy.m"; sourceTree = "<group>"; };
-		F460F2460CBE24B296BC4A504E2BA212 /* ASValuePopUpView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASValuePopUpView.h; path = ASValueTrackingSlider/ASValuePopUpView.h; sourceTree = "<group>"; };
-		FF6F92FFB6D084CADC361084D69B7CCE /* BSKeyboardControls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSKeyboardControls.h; path = BSKeyboardControls/BSKeyboardControls.h; sourceTree = "<group>"; };
+		F0E0A3A0B4AEF1DECD8548CBE1AE7D36 /* ASValueTrackingSlider-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ASValueTrackingSlider-Private.xcconfig"; sourceTree = "<group>"; };
+		F49F9610F12F4AC54A170F64A566EF53 /* BSKeyboardControls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSKeyboardControls.h; path = BSKeyboardControls/BSKeyboardControls.h; sourceTree = "<group>"; };
+		F68E5D50FAE2B6341CA0575D0008CF6C /* BSKeyboardControls.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSKeyboardControls.m; path = BSKeyboardControls/BSKeyboardControls.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00CA2095D852FA440C12EA39F8F0F780 /* Frameworks */ = {
+		21E69B9B06228C361C27B7F4F27BA8C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8640E5CAB2D4A9408ECC888C3B34E4 /* Foundation.framework in Frameworks */,
+				ED754559EC8F1CB205EC488AC97F63E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,11 +108,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		677282C6055671273F620AAD4008F918 /* Frameworks */ = {
+		67FCB31E35074B643B6F32722B6B8C5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD82F97E954325BC096EF427C3F05405 /* Foundation.framework in Frameworks */,
+				3A29B8B7BF2925EFE47046A8C6F60F51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				414539FD858512D95A86FEC6323B79EF /* RFRateMe.xcconfig */,
-				869414EA2AA080988F615A8DA8FC1FAC /* RFRateMe-Private.xcconfig */,
+				6D702E6E6ABFD02CD5DF828FA89A5769 /* RFRateMe-Private.xcconfig */,
 				EC5CB76A6FC1DAB6F5EA9101D41461C7 /* RFRateMe-dummy.m */,
 				819F915F49A036EEC25A8C6A1EE226ED /* RFRateMe-prefix.pch */,
 			);
@@ -162,10 +162,10 @@
 		554BB866258DB6C064A65D1212C26A4E /* ASValueTrackingSlider */ = {
 			isa = PBXGroup;
 			children = (
-				F460F2460CBE24B296BC4A504E2BA212 /* ASValuePopUpView.h */,
-				B5BCB700D1707115F9A4FE1B7E60399D /* ASValuePopUpView.m */,
-				A997150A0EC89BBF7052B61CA391FDDB /* ASValueTrackingSlider.h */,
-				02E34D7166F69BA2587825D061CB0EBA /* ASValueTrackingSlider.m */,
+				D8057FA6032B65C690DDB0962034B288 /* ASValuePopUpView.h */,
+				783DA6E3D922FE30F272A6CAC8A33E78 /* ASValuePopUpView.m */,
+				6A9D39812F172332E1E69985A5B4322A /* ASValueTrackingSlider.h */,
+				D218FAC8F8AC52EFDBF13B5A674B4352 /* ASValueTrackingSlider.m */,
 				95B84DC8F51D7E12DE1995380452CCBE /* Support Files */,
 			);
 			path = ASValueTrackingSlider;
@@ -175,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				5A0F41A2B2742BB7EC3FC2AE0BC841CD /* BSKeyboardControls.xcconfig */,
-				96AB200F7D2AC641620EFDE396557909 /* BSKeyboardControls-Private.xcconfig */,
-				ED341BAC8BBD9B47D3C94FD941FE9854 /* BSKeyboardControls-dummy.m */,
+				E68B95CF5441D89BD9615B359E80D35A /* BSKeyboardControls-Private.xcconfig */,
+				1A66A07B98F2211A15D7BC69A40D341D /* BSKeyboardControls-dummy.m */,
 				5F37964BC2B30193C929A5F13323B530 /* BSKeyboardControls-prefix.pch */,
 			);
 			name = "Support Files";
@@ -201,8 +201,8 @@
 				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
 				2E10FE9885A193E137F5EAC08E6E937F /* Pods-dummy.m */,
 				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
-				E7BC5479E683E25DE4DA395EC5717534 /* Pods.debug.xcconfig */,
-				4CB32D4AFDF3EAF833F40706B5243622 /* Pods.release.xcconfig */,
+				DC39D6A1042D1E4AD16084FC597978B9 /* Pods.debug.xcconfig */,
+				7D318CDF428E63910E270C3C22623EF5 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
@@ -212,8 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				0EB27CD2DB8867168924C10025FBE584 /* ASValueTrackingSlider.xcconfig */,
-				472063BBFCBC56DE4D15FFB24799FE8F /* ASValueTrackingSlider-Private.xcconfig */,
-				BD695C7556EF9FFB83CE76FBEB794733 /* ASValueTrackingSlider-dummy.m */,
+				F0E0A3A0B4AEF1DECD8548CBE1AE7D36 /* ASValueTrackingSlider-Private.xcconfig */,
+				43F6C7059D16DC661A7D02F88DB0A3A4 /* ASValueTrackingSlider-dummy.m */,
 				AAE8493E1CF45D57B00D10D0AC4C1DA8 /* ASValueTrackingSlider-prefix.pch */,
 			);
 			name = "Support Files";
@@ -233,8 +233,8 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23F9785314FAD5F163605852A8DD5471 /* libASValueTrackingSlider.a */,
-				C5173B90095E2C032D6A665E97481D07 /* libBSKeyboardControls.a */,
+				42B88E6DE07547C8253EBC5373220237 /* libASValueTrackingSlider.a */,
+				C46A796C2BB2B5A496D6CE9A4ECE81DD /* libBSKeyboardControls.a */,
 				BB9090CF1E1B4AB4569853E619C2F3A4 /* libPods.a */,
 				10520852282BA492CD5B67D2AFB2C5FF /* libRFRateMe.a */,
 			);
@@ -261,8 +261,8 @@
 		D89E114E88BFC300CDE9FC2F4C063E4B /* BSKeyboardControls */ = {
 			isa = PBXGroup;
 			children = (
-				FF6F92FFB6D084CADC361084D69B7CCE /* BSKeyboardControls.h */,
-				72E6332087A842D79B309BB348C876C0 /* BSKeyboardControls.m */,
+				F49F9610F12F4AC54A170F64A566EF53 /* BSKeyboardControls.h */,
+				F68E5D50FAE2B6341CA0575D0008CF6C /* BSKeyboardControls.m */,
 				5F4A3C3A71A6ED0F3AE83F5E337B17D1 /* Support Files */,
 			);
 			path = BSKeyboardControls;
@@ -271,12 +271,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2FD03BD9A01BFA74BD496999EE264322 /* Headers */ = {
+		820FDD451861BBF192E282C11A02D12B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03E1AE7F4EBBBC458309E2A74610964 /* ASValuePopUpView.h in Headers */,
-				1EBF91B14ADF0B4B828D44D29EE12B9C /* ASValueTrackingSlider.h in Headers */,
+				A851E0B2AB6B6FB1BB09EDF8660E3FF4 /* ASValuePopUpView.h in Headers */,
+				DE654B8F4B02179CE9B79A1C70504B5D /* ASValueTrackingSlider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885983AA5D29A002EE94A9AEC89B7EB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B816609EF6E09729880B2121E72A29A /* BSKeyboardControls.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,17 +297,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2DBE293AF0A716DC57E96825E220440 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B2008580251D17EB619888EFEE14908 /* BSKeyboardControls.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6E7257C21C983CCBBE1E2A4E19C4DA6C /* BSKeyboardControls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E26731365B7E90E3D93F580822DFD3 /* Build configuration list for PBXNativeTarget "BSKeyboardControls" */;
+			buildPhases = (
+				62B7B81ECB2E8A1156029E5B3237D8A3 /* Sources */,
+				67FCB31E35074B643B6F32722B6B8C5B /* Frameworks */,
+				885983AA5D29A002EE94A9AEC89B7EB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSKeyboardControls;
+			productName = BSKeyboardControls;
+			productReference = C46A796C2BB2B5A496D6CE9A4ECE81DD /* libBSKeyboardControls.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6FACF6B380F303130131368245209A62 /* RFRateMe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF94C87CF5AA42ACDFD4D2ED3D190A84 /* Build configuration list for PBXNativeTarget "RFRateMe" */;
@@ -317,13 +334,13 @@
 			productReference = 10520852282BA492CD5B67D2AFB2C5FF /* libRFRateMe.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9604E14795C152493A8D67FD980F3FCA /* ASValueTrackingSlider */ = {
+		6FB2EFC86F6161B0A812A28FAF099B41 /* ASValueTrackingSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B10387B795822BDC3810EDC8EE0F4B6 /* Build configuration list for PBXNativeTarget "ASValueTrackingSlider" */;
+			buildConfigurationList = D60A6F574E982ADF87B67AAA133578B6 /* Build configuration list for PBXNativeTarget "ASValueTrackingSlider" */;
 			buildPhases = (
-				B7F515E00342DA70CDFC44B24F3E9123 /* Sources */,
-				00CA2095D852FA440C12EA39F8F0F780 /* Frameworks */,
-				2FD03BD9A01BFA74BD496999EE264322 /* Headers */,
+				A0C43A093A3D6A1271C1CE13B494E8BC /* Sources */,
+				21E69B9B06228C361C27B7F4F27BA8C1 /* Frameworks */,
+				820FDD451861BBF192E282C11A02D12B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -331,24 +348,7 @@
 			);
 			name = ASValueTrackingSlider;
 			productName = ASValueTrackingSlider;
-			productReference = 23F9785314FAD5F163605852A8DD5471 /* libASValueTrackingSlider.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9AB4C595F4FEBDC7D051125C40870773 /* BSKeyboardControls */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82AA9754B2B13698C5F0AFB0E92721E8 /* Build configuration list for PBXNativeTarget "BSKeyboardControls" */;
-			buildPhases = (
-				7A31990CC52EE2F23180D1EA0CEE2E55 /* Sources */,
-				677282C6055671273F620AAD4008F918 /* Frameworks */,
-				E2DBE293AF0A716DC57E96825E220440 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BSKeyboardControls;
-			productName = BSKeyboardControls;
-			productReference = C5173B90095E2C032D6A665E97481D07 /* libBSKeyboardControls.a */;
+			productReference = 42B88E6DE07547C8253EBC5373220237 /* libASValueTrackingSlider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AB1D3E71FA424EA760851C8EFAB3C655 /* Pods */ = {
@@ -361,9 +361,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				44C1087641B1871E386AE2734FE1D71D /* PBXTargetDependency */,
-				26A1F9BB1995A2BCFE0715EA87B0EDBD /* PBXTargetDependency */,
-				30ACE39B5AC3048CF74F2EF32EB958C6 /* PBXTargetDependency */,
+				31F8F7C48151D763EA479B5CCA3A1894 /* PBXTargetDependency */,
+				F2B504B8C3C3D750C35D8926DE6F6EF1 /* PBXTargetDependency */,
+				D8E98CD0AE14CEAE686840060F219312 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -391,8 +391,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9604E14795C152493A8D67FD980F3FCA /* ASValueTrackingSlider */,
-				9AB4C595F4FEBDC7D051125C40870773 /* BSKeyboardControls */,
+				6FB2EFC86F6161B0A812A28FAF099B41 /* ASValueTrackingSlider */,
+				6E7257C21C983CCBBE1E2A4E19C4DA6C /* BSKeyboardControls */,
 				AB1D3E71FA424EA760851C8EFAB3C655 /* Pods */,
 				6FACF6B380F303130131368245209A62 /* RFRateMe */,
 			);
@@ -408,12 +408,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A31990CC52EE2F23180D1EA0CEE2E55 /* Sources */ = {
+		62B7B81ECB2E8A1156029E5B3237D8A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D65298A4172EC828E9342CE679A32DF /* BSKeyboardControls-dummy.m in Sources */,
-				CEBF41BA5D9C82C6063580FF13997521 /* BSKeyboardControls.m in Sources */,
+				3B4CAA3897CE8B263A6E031937A16928 /* BSKeyboardControls-dummy.m in Sources */,
+				A7EF0B06CB69A1A02E9C22F329428EBB /* BSKeyboardControls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,47 +427,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7F515E00342DA70CDFC44B24F3E9123 /* Sources */ = {
+		A0C43A093A3D6A1271C1CE13B494E8BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455E9CB7E6C1EDDEA9AB8F97771A0189 /* ASValuePopUpView.m in Sources */,
-				FDEC942C230BA2549C022A033BC2765D /* ASValueTrackingSlider-dummy.m in Sources */,
-				35C492BEB77CC66DC4C924D883848624 /* ASValueTrackingSlider.m in Sources */,
+				E50CB5DA9FB30EE7618ED6263929CD1E /* ASValuePopUpView.m in Sources */,
+				8D83311D741FCF5D8051ABFE6FA25FBD /* ASValueTrackingSlider-dummy.m in Sources */,
+				A35CF4CDFE526C8E2E409B35EE8B43EE /* ASValueTrackingSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26A1F9BB1995A2BCFE0715EA87B0EDBD /* PBXTargetDependency */ = {
+		31F8F7C48151D763EA479B5CCA3A1894 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BSKeyboardControls;
-			target = 9AB4C595F4FEBDC7D051125C40870773 /* BSKeyboardControls */;
-			targetProxy = 78635B17FD08153252D4461D4CA08EDF /* PBXContainerItemProxy */;
+			name = ASValueTrackingSlider;
+			target = 6FB2EFC86F6161B0A812A28FAF099B41 /* ASValueTrackingSlider */;
+			targetProxy = CD70788CC870352EF764DA62A005F2FC /* PBXContainerItemProxy */;
 		};
-		30ACE39B5AC3048CF74F2EF32EB958C6 /* PBXTargetDependency */ = {
+		D8E98CD0AE14CEAE686840060F219312 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RFRateMe;
 			target = 6FACF6B380F303130131368245209A62 /* RFRateMe */;
-			targetProxy = F4BDC3229C18415921DA24A00057C9F5 /* PBXContainerItemProxy */;
+			targetProxy = AA026682D710BB35D1B97900073EC933 /* PBXContainerItemProxy */;
 		};
-		44C1087641B1871E386AE2734FE1D71D /* PBXTargetDependency */ = {
+		F2B504B8C3C3D750C35D8926DE6F6EF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ASValueTrackingSlider;
-			target = 9604E14795C152493A8D67FD980F3FCA /* ASValueTrackingSlider */;
-			targetProxy = E226E58076B1230E592F333EE5455B15 /* PBXContainerItemProxy */;
+			name = BSKeyboardControls;
+			target = 6E7257C21C983CCBBE1E2A4E19C4DA6C /* BSKeyboardControls */;
+			targetProxy = B1604D403266CCBA8395AA7F036C9ECA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1793946477C2B8168B88AD8D66D70849 /* Release */ = {
+		052A17875CB827423D627183396CEB60 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96AB200F7D2AC641620EFDE396557909 /* BSKeyboardControls-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		221165D95168C435BF12DB3D17FD4650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E0A3A0B4AEF1DECD8548CBE1AE7D36 /* ASValueTrackingSlider-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BSKeyboardControls/BSKeyboardControls-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/ASValueTrackingSlider/ASValueTrackingSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -477,13 +511,13 @@
 			};
 			name = Release;
 		};
-		64D3DBB6F6E795C543FC1FC96FD91B11 /* Debug */ = {
+		30DD0775F1536798E4C2D198D5080D32 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 869414EA2AA080988F615A8DA8FC1FAC /* RFRateMe-Private.xcconfig */;
+			baseConfigurationReference = F0E0A3A0B4AEF1DECD8548CBE1AE7D36 /* ASValueTrackingSlider-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RFRateMe/RFRateMe-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/ASValueTrackingSlider/ASValueTrackingSlider-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -493,13 +527,13 @@
 			};
 			name = Debug;
 		};
-		685A6AEB0931B744FD25F906F3BC1865 /* Release */ = {
+		56C3606D6CC29679BDF3273726EE69CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 869414EA2AA080988F615A8DA8FC1FAC /* RFRateMe-Private.xcconfig */;
+			baseConfigurationReference = 6D702E6E6ABFD02CD5DF828FA89A5769 /* RFRateMe-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RFRateMe/RFRateMe-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -509,29 +543,13 @@
 			};
 			name = Release;
 		};
-		8B5A3ED545FFCC118C04B3690BFBAE4B /* Debug */ = {
+		85F76EB74EA5FE3F4154AD3D298DE0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96AB200F7D2AC641620EFDE396557909 /* BSKeyboardControls-Private.xcconfig */;
+			baseConfigurationReference = DC39D6A1042D1E4AD16084FC597978B9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BSKeyboardControls/BSKeyboardControls-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9A917AF76B2F6CC261DE88D8CBDCC929 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CB32D4AFDF3EAF833F40706B5243622 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -539,9 +557,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -573,20 +591,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		AA298967C7097A16441A4A4123682F7E /* Release */ = {
+		B72A54FF1BB86E54FE8996100BCA02C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472063BBFCBC56DE4D15FFB24799FE8F /* ASValueTrackingSlider-Private.xcconfig */;
+			baseConfigurationReference = E68B95CF5441D89BD9615B359E80D35A /* BSKeyboardControls-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASValueTrackingSlider/ASValueTrackingSlider-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/BSKeyboardControls/BSKeyboardControls-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -596,13 +614,13 @@
 			};
 			name = Release;
 		};
-		BA0DDA9FC4A1EB984A5502117B3492F5 /* Debug */ = {
+		D0EC1F8EEF197E56956E3EFD9756EE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 472063BBFCBC56DE4D15FFB24799FE8F /* ASValueTrackingSlider-Private.xcconfig */;
+			baseConfigurationReference = 6D702E6E6ABFD02CD5DF828FA89A5769 /* RFRateMe-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASValueTrackingSlider/ASValueTrackingSlider-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/RFRateMe/RFRateMe-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -612,13 +630,29 @@
 			};
 			name = Debug;
 		};
-		C04364B48A7F4093B4DCCF9F4C2CF3BE /* Debug */ = {
+		D100E16D75A984B456E3575AE57B1A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7BC5479E683E25DE4DA395EC5717534 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = E68B95CF5441D89BD9615B359E80D35A /* BSKeyboardControls-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/BSKeyboardControls/BSKeyboardControls-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB68C9DEED077934F5682762C1C14A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D318CDF428E63910E270C3C22623EF5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -626,59 +660,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
-		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B10387B795822BDC3810EDC8EE0F4B6 /* Build configuration list for PBXNativeTarget "ASValueTrackingSlider" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA0DDA9FC4A1EB984A5502117B3492F5 /* Debug */,
-				AA298967C7097A16441A4A4123682F7E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -686,17 +677,26 @@
 		2FE95D25668ECFB90427648F5774A6E3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C04364B48A7F4093B4DCCF9F4C2CF3BE /* Debug */,
-				9A917AF76B2F6CC261DE88D8CBDCC929 /* Release */,
+				85F76EB74EA5FE3F4154AD3D298DE0FA /* Debug */,
+				FB68C9DEED077934F5682762C1C14A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82AA9754B2B13698C5F0AFB0E92721E8 /* Build configuration list for PBXNativeTarget "BSKeyboardControls" */ = {
+		49E26731365B7E90E3D93F580822DFD3 /* Build configuration list for PBXNativeTarget "BSKeyboardControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B5A3ED545FFCC118C04B3690BFBAE4B /* Debug */,
-				1793946477C2B8168B88AD8D66D70849 /* Release */,
+				D100E16D75A984B456E3575AE57B1A97 /* Debug */,
+				B72A54FF1BB86E54FE8996100BCA02C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60A6F574E982ADF87B67AAA133578B6 /* Build configuration list for PBXNativeTarget "ASValueTrackingSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30DD0775F1536798E4C2D198D5080D32 /* Debug */,
+				221165D95168C435BF12DB3D17FD4650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -704,8 +704,8 @@
 		EF94C87CF5AA42ACDFD4D2ED3D190A84 /* Build configuration list for PBXNativeTarget "RFRateMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64D3DBB6F6E795C543FC1FC96FD91B11 /* Debug */,
-				685A6AEB0931B744FD25F906F3BC1865 /* Release */,
+				D0EC1F8EEF197E56956E3EFD9756EE95 /* Debug */,
+				56C3606D6CC29679BDF3273726EE69CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
